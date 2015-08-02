@@ -1,4 +1,4 @@
-require "lolesports/api/version"
+require 'lolesports/api/version'
 
 module Lolesports
   module Api
