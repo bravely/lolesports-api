@@ -19,12 +19,13 @@ Or install it yourself as:
     $ gem install lolesports-api
 
 ## Example Usage
+#### Loading it u
 
 #### Finding an object
 To find an individual player by their id number:
 
 ```
-Api::Player.find(id)
+LolesportsApi::Player.find(id)
 ```
 
 Currently there is no way to search for a player by any given attributes.
@@ -33,12 +34,12 @@ Currently there is no way to search for a player by any given attributes.
 
 As an unofficial API, certain features either work poorly or barely at all. As a rule of thumb, if you have a parent object(say, a Team), it will only include the `id`s of its children, and maybe other incidental information(such as `name`).
 
-This wrapper currently only does single requests at a time(as I can't tell if things are rate limited or not and would rather not push my luck). However, you can 'fill' an object with its children by using get:
+This wrapper currently only does single requests at a time(as I can't tell if things are rate limited or not and would rather not push my luck).
 
 ```
-$ team = Api::Team.find(304) # Cloud9
+$ team = LolesportsApi::Team.find(304) # Cloud9
 $ team.roster.first
-=> #<Api::Player:0x007fc7349f96f8
+=> #<Api::Player:0x007f806544d940
  @bio=nil,
  @contract_expiration=nil,
  @first_name=nil,
@@ -53,8 +54,9 @@ $ team.roster.first
  @role="Top Lane",
  @role_id=nil,
  @team_id=nil>
-$ 
 ```
+
+From here, calling `team.roster.first.get` will make the API call and populate the object with its attributes.
 
 ## Special Thanks
 Thanks [@levi](https://twitter.com/levi) for [this](https://gist.github.com/levi/e7e5e808ac0119e154ce) documentation.
