@@ -7,7 +7,7 @@ module Api
                 :no_players, :profile_url, :roster,
                 :team_photo_url
 
-    @api_url = 'http://na.lolesports.com/api/team'
+    API_URL = 'http://na.lolesports.com/api/team'
 
     def initialize(attributes)
       @id = attributes['id']
