@@ -1,3 +1,3 @@
-describe Lolesports::Api do
+describe LolesportsApi do
   pending
 end

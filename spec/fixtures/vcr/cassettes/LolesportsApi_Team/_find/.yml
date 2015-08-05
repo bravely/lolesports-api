@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 04 Aug 2015 06:26:55 GMT
+      - Wed, 05 Aug 2015 05:13:33 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -27,16 +27,16 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=ded9e78adc828eebc73c41d3fed45a8ce1438669615; expires=Wed, 03-Aug-16
-        06:26:55 GMT; path=/; domain=.lolesports.com; HttpOnly
+      - __cfduid=de771f1db6d002794526572affea495441438751612; expires=Thu, 04-Aug-16
+        05:13:32 GMT; path=/; domain=.lolesports.com; HttpOnly
       Cache-Control:
       - public, max-age=1800
       Etag:
-      - '"1438669629-1"'
+      - '"1438751166-1"'
       Expires:
-      - Tue, 04 Aug 2015 06:56:55 GMT
+      - Wed, 05 Aug 2015 05:43:33 GMT
       Last-Modified:
-      - Tue, 04 Aug 2015 06:27:09 GMT
+      - Wed, 05 Aug 2015 05:06:06 GMT
       Vary:
       - Accept-Encoding
       Via:
@@ -44,9 +44,9 @@ http_interactions:
       X-Drupal-Cache:
       - MISS
       X-Varnish:
-      - '1795475907'
+      - 1377982057 1377979533
       X-Varnish-Cache:
-      - MISS
+      - HIT
       Cf-Cache-Status:
       - EXPIRED
       Accept-Ranges:
@@ -54,7 +54,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 21083186f5571e65-SJC
+      - 2110036c1d66286a-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"name":"Cloud9 ","bio":null,"noPlayers":"0","roster":{"players0":{"playerId":"328","name":"Balls","role":"Top
@@ -64,5 +64,5 @@ http_interactions:
         Lane","isStarter":1},"players7":{"playerId":"1313","name":"Sheep","role":"Support","isStarter":0},"players8":{"playerId":"1353","name":"Yusui","role":"Mid
         Lane","isStarter":0},"players9":{"playerId":"2551","name":"Hard","role":"Jungler","isStarter":0}},"logoUrl":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/cloud9-logo.png","profileUrl":"http://na.lolesports.com/node/304","teamPhotoUrl":"http://na.lolesports.com/","acronym":"C9"}'
     http_version: 
-  recorded_at: Tue, 04 Aug 2015 06:26:55 GMT
+  recorded_at: Wed, 05 Aug 2015 05:13:32 GMT
 recorded_with: VCR 2.9.3

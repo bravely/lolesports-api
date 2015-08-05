@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'lolesports/api/version'
+require 'lolesports-api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'lolesports-api'
-  spec.version       = Lolesports::Api::VERSION
+  spec.version       = LolesportsApi::VERSION
   spec.authors       = ['Jake Mays']
   spec.email         = ['quaunaut@gmail.com']
   spec.summary       = 'Wraps the lolesports API.'

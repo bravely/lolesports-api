@@ -1,7 +1,7 @@
 require 'faraday'
 require 'json'
 
-module Api
+module LolesportsApi
   class BaseApiObject
     def self.find(base_id)
       response = Faraday.get("#{self::API_URL}/#{base_id}.json")

@@ -6,3 +6,6 @@ MethodLength:
 
 AbcSize:
   Enabled: false
+
+FileName:
+  Enabled: false

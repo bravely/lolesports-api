@@ -20,7 +20,7 @@
 require 'webmock/rspec'
 require 'vcr'
 
-require 'lolesports/api'
+require 'lolesports-api'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

@@ -1,8 +1,8 @@
 require 'faraday'
 require 'json'
 
-module Api
-  class Team < Api::BaseApiObject
+module LolesportsApi
+  class Team < LolesportsApi::BaseApiObject
     attr_reader :id, :acronym, :bio, :logo_url, :name,
                 :no_players, :profile_url, :roster,
                 :team_photo_url
@@ -24,7 +24,7 @@ module Api
     def self.find(team_id)
       super
       @attributes['roster'].values.each do |player|
-        @base_object.roster << Api::Player.new(player)
+        @base_object.roster << LolesportsApi::Player.new(player)
       end
       @base_object
     end

@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 04 Aug 2015 06:26:54 GMT
+      - Wed, 05 Aug 2015 05:13:05 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -27,16 +27,16 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d40895bffbf565e3a7fbac98bbcaa40431438669613; expires=Wed, 03-Aug-16
-        06:26:53 GMT; path=/; domain=.lolesports.com; HttpOnly
+      - __cfduid=d6c7a2a8fea8000df4acb00054c00bbc71438751584; expires=Thu, 04-Aug-16
+        05:13:04 GMT; path=/; domain=.lolesports.com; HttpOnly
       Cache-Control:
       - public, max-age=1800
       Etag:
-      - '"1438669629-1"'
+      - '"1438751583-1"'
       Expires:
-      - Tue, 04 Aug 2015 06:56:54 GMT
+      - Wed, 05 Aug 2015 05:43:05 GMT
       Last-Modified:
-      - Tue, 04 Aug 2015 06:27:09 GMT
+      - Wed, 05 Aug 2015 05:13:03 GMT
       Vary:
       - Accept-Encoding
       Via:
@@ -44,7 +44,7 @@ http_interactions:
       X-Drupal-Cache:
       - MISS
       X-Varnish:
-      - '96530935'
+      - '377422892'
       X-Varnish-Cache:
       - MISS
       Cf-Cache-Status:
@@ -54,7 +54,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2108317b59ec0657-SJC
+      - 211002bcc40e287c-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"name":"Hai","bio":"Hai \u201cHai\u201d Lam is a veteran mid laner.
@@ -65,5 +65,5 @@ http_interactions:
         San Jose 2015. Hai has continued to push the Cloud9 organization forward both
         on and off The Rift since he retired from competitive play in 2015.","firstname":"Hai","lastName":"Lam","hometown":"USA","facebookUrl":null,"twitterUrl":null,"teamId":304,"profileUrl":"http://na.lolesports.com/node/330","role":"Jungler","roleId":"1","photoUrl":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/C9-Hai-2015.jpg","isStarter":1,"residency":null,"contractExpiration":"2015-10-07T00:00:00+00:00"}'
     http_version: 
-  recorded_at: Tue, 04 Aug 2015 06:26:54 GMT
+  recorded_at: Wed, 05 Aug 2015 05:13:04 GMT
 recorded_with: VCR 2.9.3

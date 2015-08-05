@@ -1,8 +1,8 @@
 require 'faraday'
 require 'json'
 
-module Api
-  class Player < Api::BaseApiObject
+module LolesportsApi
+  class Player < LolesportsApi::BaseApiObject
     attr_reader :id, :name, :bio, :first_name, :last_name,
                 :team_id, :role, :role_id, :is_starter,
                 :hometown, :contract_expiration, :photo_url,
