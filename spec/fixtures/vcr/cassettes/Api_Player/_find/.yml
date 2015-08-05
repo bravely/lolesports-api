@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/player/330.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Aug 2015 06:26:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '551'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d40895bffbf565e3a7fbac98bbcaa40431438669613; expires=Wed, 03-Aug-16
+        06:26:53 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1438669629-1"'
+      Expires:
+      - Tue, 04 Aug 2015 06:56:54 GMT
+      Last-Modified:
+      - Tue, 04 Aug 2015 06:27:09 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '96530935'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - EXPIRED
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2108317b59ec0657-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"Hai","bio":"Hai \u201cHai\u201d Lam is a veteran mid laner.
+        Preferring assassin champs, Hai is happiest when he can explode the enemy
+        carry instantly to turn team fights in Cloud9\u2019s favor. After suffering
+        a collapsed lung in 2014 Hai was forced to take a brief recovery apart from
+        Cloud9, but he returned with a vengeance to lead Cloud9 to victory in IEM
+        San Jose 2015. Hai has continued to push the Cloud9 organization forward both
+        on and off The Rift since he retired from competitive play in 2015.","firstname":"Hai","lastName":"Lam","hometown":"USA","facebookUrl":null,"twitterUrl":null,"teamId":304,"profileUrl":"http://na.lolesports.com/node/330","role":"Jungler","roleId":"1","photoUrl":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/C9-Hai-2015.jpg","isStarter":1,"residency":null,"contractExpiration":"2015-10-07T00:00:00+00:00"}'
+    http_version: 
+  recorded_at: Tue, 04 Aug 2015 06:26:54 GMT
+recorded_with: VCR 2.9.3
