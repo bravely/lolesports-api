@@ -23,7 +23,7 @@ module LolesportsApi
 
     def self.find(team_id)
       super
-      @attributes['roster'].values.each do |player|
+      @attributes['roster'].each_value do |player|
         @base_object.roster << LolesportsApi::Player.new(player)
       end
       @base_object

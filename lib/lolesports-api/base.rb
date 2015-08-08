@@ -10,7 +10,7 @@ module LolesportsApi
       @base_object = new(@attributes)
     end
 
-    def get
+    def reload
       response = Faraday.get("#{self.class::API_URL}/#{@id}.json")
       @attributes = JSON.parse(response.body)
       initialize(@attributes)

@@ -14,10 +14,10 @@ describe LolesportsApi::Player do
     end
   end
 
-  describe '#get', vcr: true, focus: true do
+  describe '#reload', vcr: true, focus: true do
     let(:player) { LolesportsApi::Player.new('playerId' => '329') }
     before(:each) do
-      player.get
+      player.reload
     end
     it { expect(player.class).to eq LolesportsApi::Player }
     it { expect(player.first_name).to eq 'William' }
