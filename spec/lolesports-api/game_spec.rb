@@ -9,5 +9,6 @@ describe LolesportsApi::Game do
     it { expect(game.players[4].player_id).to eq 79 }
     it { expect(game.blue_team.id).to eq 67 }
     it { expect(game.red_team.name).to eq 'Copenhagen Wolves' }
+    it { expect(game.date_time).to eq DateTime.new(2014, 5, 21, 15) }
   end
 end

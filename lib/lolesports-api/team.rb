@@ -1,11 +1,8 @@
-require 'faraday'
-require 'json'
-
 module LolesportsApi
   class Team < LolesportsApi::BaseApiObject
     attr_reader :id, :acronym, :bio, :logo_url, :name,
                 :no_players, :profile_url, :roster,
-                :team_photo_url
+                :team_photo_url, :losses, :wins
 
     API_URL = 'http://na.lolesports.com/api/team'
 
@@ -19,6 +16,8 @@ module LolesportsApi
       @profile_url = attributes['profileUrl']
       @roster = []
       @team_photo_url = attributes['teamPhotoUrl']
+      @losses = attributes['losses']
+      @wins = attributes['wins']
     end
 
     def self.find(team_id)

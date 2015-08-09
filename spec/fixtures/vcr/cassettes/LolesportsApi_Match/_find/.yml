@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/match/2299.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Aug 2015 21:09:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '459'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0fb25ef920ff4d58e48f1e7f692eedd41439154592; expires=Mon, 08-Aug-16
+        21:09:52 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1439150774-1"'
+      Expires:
+      - Sun, 09 Aug 2015 21:39:52 GMT
+      Last-Modified:
+      - Sun, 09 Aug 2015 20:06:14 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '975429665'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - STALE
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 213671cbcd782822-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"tournament":{"id":"102","name":"EU LCS Summer Split","round":"1"},"url":"/tourney/match/2299","dateTime":"2014-05-21T18:00Z","winnerId":"67","matchId":"2299","maxGames":"1","isLive":false,"isFinished":"1","contestants":{"blue":{"id":"67","name":"SK
+        Gaming","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/sk-white.png?itok=TN9fYC_w","acronym":"SK","wins":15,"losses":13},"red":{"id":"1100","name":"Copenhagen
+        Wolves","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/Wolveslogobund.png?itok=VBpWLfFw","acronym":"CW","wins":8,"losses":20}},"liveStreams":false,"polldaddyId":"8011372:36412099:36412100","games":{"game0":{"id":"2782","winnerId":"67","noVods":0,"hasVod":1}},"name":"SK
+        Gaming vs Copenhagen Wolves"}'
+    http_version: 
+  recorded_at: Sun, 09 Aug 2015 21:09:52 GMT
+recorded_with: VCR 2.9.3

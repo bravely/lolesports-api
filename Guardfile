@@ -18,7 +18,7 @@ guard :rspec, cmd: 'bundle exec rspec' do
   dsl.watch_spec_files_for(ruby.lib_files)
 end
 
-guard :rubocop do
+guard :rubocop, all_on_start: false do
   watch(/.+\.rb$/)
   watch(/lolesports-api\.gemspec$/)
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }

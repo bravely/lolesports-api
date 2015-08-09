@@ -1,5 +1,6 @@
 require 'faraday'
 require 'json'
+require 'date'
 
 module LolesportsApi
   class BaseApiObject

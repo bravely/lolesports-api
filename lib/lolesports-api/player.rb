@@ -1,6 +1,3 @@
-require 'faraday'
-require 'json'
-
 module LolesportsApi
   class Player < LolesportsApi::BaseApiObject
     attr_reader :id, :name, :bio, :first_name, :last_name,
