@@ -10,7 +10,7 @@ module LolesportsApi
 
     API_URL = 'http://na.lolesports.com/api/player'
 
-    def initialize(attributes)
+    def initialize(attributes = {})
       @id = attributes['id'] || attributes['playerId'].to_i
       @name = attributes['name']
       @bio = attributes['bio']

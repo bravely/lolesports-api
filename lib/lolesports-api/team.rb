@@ -9,8 +9,8 @@ module LolesportsApi
 
     API_URL = 'http://na.lolesports.com/api/team'
 
-    def initialize(attributes)
-      @id = attributes['id']
+    def initialize(attributes = {})
+      @id = attributes['id'].to_i
       @acronym = attributes['acronym']
       @bio = attributes['bio']
       @logo_url = attributes['logoUrl']
