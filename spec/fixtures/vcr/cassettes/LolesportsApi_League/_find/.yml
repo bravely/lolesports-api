@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/league/1.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Aug 2015 23:44:15 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1611'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd1af06488daed4dc3645e5c1ffd9f65f1439250254; expires=Tue, 09-Aug-16
+        23:44:14 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1439250254-1"'
+      Expires:
+      - Tue, 11 Aug 2015 00:14:15 GMT
+      Last-Modified:
+      - Mon, 10 Aug 2015 23:44:14 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '1385824085'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - EXPIRED
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 213f914b2e1b071f-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"color":"#1376A4","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/NA_LCS_Logo_RGB_72dpi.png","defaultTournamentId":"241","defaultSeriesId":0,"internationalLiveStream":[{"language":"English","display_language":"English","streams":[{"title":"Twitch","url":"http://twitch.tv/riotgames","randomize":"33"},{"title":"YouTube","url":"https://www.youtube.com/watch?v=2HGnYUu8Rio","randomize":"33"},{"title":"Azubu","url":"<html>\r\n<head>\r\n<title>Embed</title>\r\n</head>\r\n<body>\r\n\r\n<!--
+        Start of Brightcove Player -->\r\n\r\n<div style=\"display:none\">\r\nRiot_Games\r\n</div>\r\n\r\n<!--\r\nBy
+        use of this code snippet, I agree to the Brightcove Publisher T and C \r\nfound
+        at https://accounts.brightcove.com/en/terms-and-conditions/. \r\n-->\r\n\r\n<script
+        language=\"JavaScript\" type=\"text/javascript\" src=\"http://admin.brightcove.com/js/BrightcoveExperiences.js\"></script>\r\n\r\n<object
+        id=\"myExperience\" class=\"BrightcoveExperience\">\r\n  <param name=\"bgcolor\"
+        value=\"#000000\" />\r\n  <param name=\"width\" value=\"960\" />\r\n  <param
+        name=\"height\" value=\"540\" />\r\n  <param name=\"playerID\" value=\"3565671771001\"
+        />\r\n  <param name=\"playerKey\" value=\"AQ~~,AAADDsF76gk~,aeB-sfIIuRjTwkTLK4hQFoRop4lztqKf\"
+        />\r\n  <param name=\"isVid\" value=\"true\" />\r\n  <param name=\"isUI\"
+        value=\"true\" />\r\n  <param name=\"dynamicStreaming\" value=\"true\" />\r\n  <param
+        name=\"quality\" value=\"high\" />\r\n  <param name=\"includeAPI\" value=\"true\"
+        />\r\n  <param name=\"htmlFallback\" value=\"true\" />\r\n  <param name=\"wmode\"
+        value=\"transparent\" />\r\n  <param name=\"@playlistTabs\" value=\"ref:Riot_GamesPlaylist\"
+        />\r\n  <param name=\"@playlistCombo\"  value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param
+        name=\"@videoList\" value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param name=\"adServerURL\"
+        value=\"http://pubads.g.doubleclick.net/gampad/ads?sz=480x270&iu=/7085766/AzubuProdBrowser/EmbedLive/Riot_Games&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&min_ad_duration=0&max_ad_duration=30000&url=[referrer_url]&correlator=[timestamp]&sdmax=120000&cust_params=channelname%3DRiot_Games%26teamname%3DRiot%26eventname%3D\"
+        />\r\n\r\n\r\n</object>\r\n\r\n<!-- \r\nThis script tag will cause the Brightcove
+        Players defined above it to be created as soon\r\nas the line is read by the
+        browser. If you wish to have the player instantiated only after\r\nthe rest
+        of the HTML is processed and the page load is complete, remove the line.\r\n-->\r\n<script
+        type=\"text/javascript\">brightcove.createExperiences();</script>\r\n\r\n<!--
+        End of Brightcove Player -->\r\n</body>\r\n</html>","randomize":"33"}]},{"language":"Spanish","display_language":"Spanish","streams":[{"title":"Twitch","url":"http://twitch.tv/eslspain","randomize":"0"}]},{"language":"Russian","display_language":"Russian","streams":[{"title":"Twitch","url":"http://twitch.tv/lolstarladder","randomize":"0"}]},{"language":"French","display_language":"French","streams":[{"title":"Millenium","url":"<iframe
+        src=\"http://millenium-tv2.nexus.mnium.org:44302/player.html?volume=1&autoplay=1&quality=480\"
+        width=\"960\" height=\"540\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>
+        ","randomize":"100"}]},{"language":"Swedish","display_language":"Swedish","streams":[{"title":"viagame","url":"<iframe
+        width=''832px'' height=''509px'' class=''viagame'' src=''http://www.viagame.com/embed/410087''
+        frameborder=''0'' allowfullscreen></iframe>","randomize":0}]}],"shortName":"NA
+        LCS","leagueTournaments":[7,11,13,19,23,28,33,77,95,104,124,168,181,184,185,197,211,220,226,241,248],"leagueSeries":[20],"noVods":0,"menuWeight":"10","published":true,"url":"http://na.lolesports.com/na-lcs","label":"NA
+        LCS","id":"1"}'
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 23:44:14 GMT
+recorded_with: VCR 2.9.3
