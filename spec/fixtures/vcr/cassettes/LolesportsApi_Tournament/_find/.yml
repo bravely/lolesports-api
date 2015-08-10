@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/tournament/102.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Aug 2015 02:47:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '331'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dad0c4258d5805a752f6a014b805760e51439174865; expires=Tue, 09-Aug-16
+        02:47:45 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1439174870-1"'
+      Expires:
+      - Mon, 10 Aug 2015 03:17:45 GMT
+      Last-Modified:
+      - Mon, 10 Aug 2015 02:47:50 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '975588137'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - EXPIRED
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 213860ba7c730d85-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"namePublic":"EU LCS Summer Split","contestants":{"contestant1":{"id":"1100","name":"Copenhagen
+        Wolves","acronym":"CW"},"contestant2":{"id":"1242","name":"ROCCAT","acronym":"ROC"},"contestant3":{"id":"1243","name":"Millenium","acronym":"MIL"},"contestant4":{"id":"589","name":"Meet
+        Your Makers","acronym":"MYM"},"contestant5":{"id":"70","name":"Alliance","acronym":"ALL"},"contestant6":{"id":"67","name":"SK
+        Gaming","acronym":"SK"},"contestant7":{"id":"68","name":"Fnatic","acronym":"FNC"},"contestant8":{"id":"69","name":"Gambit
+        Gaming","acronym":"GMB"}},"isFinished":true,"dateBegin":"2014-05-20T15:00Z","dateEnd":"2014-07-31T15:00Z","noVods":0,"season":"2014","published":true,"winner":"69","name":"EU
+        LCS Summer Split"}'
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 02:47:45 GMT
+recorded_with: VCR 2.9.3

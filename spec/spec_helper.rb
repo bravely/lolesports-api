@@ -19,6 +19,7 @@
 
 require 'webmock/rspec'
 require 'vcr'
+require 'pry'
 
 require 'lolesports-api'
 
