@@ -34,7 +34,6 @@ module LolesportsApi
       @attributes['games'].each_value do |game|
         @base_object.games << LolesportsApi::Game.new(game)
       end
-      @base_object.tournament
       @base_object
     end
   end

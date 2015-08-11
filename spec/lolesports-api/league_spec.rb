@@ -6,6 +6,7 @@ describe LolesportsApi::League do
     it { expect(league.id).to eq 1 }
     it { expect(league.tournaments[0].id).to eq 7 }
     it { expect(league.name).to eq 'NA LCS' }
+    it { expect(league.series[0].id).to eq 20 }
     it { expect(league.tournaments).to eq league.league_tournaments }
     it { expect(league.series).to eq league.league_series }
   end

@@ -7,7 +7,7 @@ module LolesportsApi
     API_URL = 'http://na.lolesports.com/api/tournament'
 
     def initialize(attributes)
-      @id = attributes['id']
+      @id = attributes['id'].to_i
       @contestants = []
       @date_begin =
         Date.parse(attributes['dateBegin']) if attributes['dateBegin']

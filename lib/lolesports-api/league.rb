@@ -13,11 +13,11 @@ module LolesportsApi
       @color = attributes['color']
       @default_series_id = attributes['defaultSeriesId'].to_i
       @default_tournament_id = attributes['defaultTournamentId'].to_i
-      # International Live Stream is one giant clusterfuck, watch out.
+      # International Live Stream is one giant cluster, watch out.
       @international_live_stream = attributes['internationalLiveStream']
       @label = attributes['label']
       @league_image = attributes['leagueImage']
-      @league_series = attributes['leagueSeries'] || []
+      @league_series = []
       @league_tournaments = []
       @menu_weight = attributes['menuWeight']
       @no_vods = attributes['noVods']
@@ -31,6 +31,10 @@ module LolesportsApi
       @attributes['leagueTournaments'].each do |tournament|
         @base_object.league_tournaments <<
           LolesportsApi::Tournament.new('id' => tournament)
+      end
+      @attributes['leagueSeries'].each do |series|
+        @base_object.league_series <<
+          LolesportsApi::Series.new('id' => series)
       end
       @base_object
     end

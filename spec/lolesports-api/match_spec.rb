@@ -8,5 +8,7 @@ describe LolesportsApi::Match do
     it { expect(match.red_team.id).to eq 1100 }
     it { expect(match.date_time.class).to eq DateTime }
     it { expect(match.games[0].id).to eq 2782 }
+    it { expect(match.tournament.id).to eq 102 }
+    it { expect(match.tournament.name).to eq 'EU LCS Summer Split' }
   end
 end
