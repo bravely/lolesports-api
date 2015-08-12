@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/series.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Aug 2015 09:00:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '825'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de82aaf2bac8fc9df08dda6f8fd5723e21439370027; expires=Thu, 11-Aug-16
+        09:00:27 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1439369629-1"'
+      Expires:
+      - Wed, 12 Aug 2015 09:30:27 GMT
+      Last-Modified:
+      - Wed, 12 Aug 2015 08:53:49 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '643094643'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - HIT
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 214afd70727011d7-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"labelPublic":"Season 3 World Championship","season":"Season 3","label":"World
+        Championship","id":"1","url":"http://na.lolesports.com/tourney/series/1","tournaments":["24","25","26"]},{"labelPublic":"NA
+        Spring 1","season":"2014","label":"NA Spring 1","id":"2","url":"http://na.lolesports.com/tourney/series/2","tournaments":["31","32","34","35","36","49"]},{"labelPublic":"EU
+        Spring 1","season":"2014","label":"EU Spring 1","id":"3","url":"http://na.lolesports.com/tourney/series/3","tournaments":["38","40","41","42","43","48","50"]},{"labelPublic":"GPL
+        Spring","season":"2014","label":"GPL Spring","id":"4","url":"http://na.lolesports.com/tourney/series/4","tournaments":["51","54","53"]},{"labelPublic":"NA
+        Spring 2","season":"2014","label":"NA Spring 2","id":"5","url":"http://na.lolesports.com/tourney/series/5","tournaments":["56","57","58","59","60","68"]},{"labelPublic":"EU
+        Spring 2","season":"2014","label":"EU Spring 2","id":"6","url":"http://na.lolesports.com/tourney/series/6","tournaments":["62","63","64","65","66","67"]},{"labelPublic":"LPL
+        Spring","season":"2014","label":"LPL Spring","id":"7","url":"http://na.lolesports.com/tourney/series/7","tournaments":["72","117"]},{"labelPublic":"OGN
+        Spring","season":"2014","label":"OGN Spring","id":"8","url":"http://na.lolesports.com/tourney/series/8","tournaments":["79","80","81","82","83"]},{"labelPublic":"All-Star
+        2014 Paris","season":"2014","label":"All-Star 2014 Paris","id":"9","url":"http://na.lolesports.com/tourney/series/9","tournaments":["100","101"]},{"labelPublic":"NA
+        Summer 1","season":"2014","label":"NA Summer 1","id":"10","url":"http://na.lolesports.com/tourney/series/10","tournaments":["105","106","107","108","109","115"]},{"labelPublic":"EU
+        Summer 1","season":"2014","label":"EU Summer 1","id":"11","url":"http://na.lolesports.com/tourney/series/11","tournaments":["110","111","112","113","114","116"]},{"labelPublic":"GPL
+        Summer","season":"2014","label":"GPL Summer","id":"12","url":"http://na.lolesports.com/tourney/series/12","tournaments":["128","131","132"]},{"labelPublic":"LPL
+        Summer","season":"2014","label":"LPL Summer","id":"13","url":"http://na.lolesports.com/tourney/series/13","tournaments":["133","173"]},{"labelPublic":"OGN
+        Summer","season":"2014","label":"OGN Summer","id":"14","url":"http://na.lolesports.com/tourney/series/14","tournaments":["138","139","143","140","142"]},{"labelPublic":"EU
+        Summer 2","season":"2014","label":"EU Summer 2","id":"15","url":"http://na.lolesports.com/tourney/series/15","tournaments":["144","145","146","147","148","149"]},{"labelPublic":"NA
+        Summer 2","season":"2014","label":"NA Summer 2","id":"16","url":"http://na.lolesports.com/tourney/series/16","tournaments":["150","151","152","153","154","155"]},{"labelPublic":"China
+        Regional Qualifier","season":"2014","label":"LPL Regional Qualifier","id":"17","url":"http://na.lolesports.com/tourney/series/17","tournaments":["163","164","165"]},{"labelPublic":"IWC
+        Gamescom","season":"2014","label":"IWC Gamescom","id":"18","url":"http://na.lolesports.com/tourney/series/18","tournaments":["170","171"]},{"labelPublic":"World
+        Championship","season":"2014","label":"World Championship","id":"19","url":"http://na.lolesports.com/tourney/series/19","tournaments":["175","177","178","179","176"]},{"labelPublic":"NA
+        LCS Expansion","season":"2015","label":"NA LCS Expansion","id":"20","url":"http://na.lolesports.com/tourney/series/20","tournaments":["181","184","185"]},{"labelPublic":"EU
+        LCS Expansion","season":"2015","label":"EU LCS Expansion","id":"22","url":"http://na.lolesports.com/tourney/series/22","tournaments":["186","187","188"]},{"labelPublic":"MSI
+        2015","season":"2015","label":"2015 Mid-Season Invitational","id":"25","url":"http://na.lolesports.com/tourney/series/25","tournaments":["221","222"]},{"labelPublic":"Summer
+        Promotion","season":"2015","label":"2015 LCK Summer Promotion","id":"26","url":"http://na.lolesports.com/tourney/series/26","tournaments":["223","224"]},{"labelPublic":"Summer
+        Playoffs","season":"2015","label":"2015 LPL Summer Playoffs","id":"27","url":"http://na.lolesports.com/tourney/series/27","tournaments":["249","250"]}]'
+    http_version: 
+  recorded_at: Wed, 12 Aug 2015 09:00:27 GMT
+recorded_with: VCR 2.9.3

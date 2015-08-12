@@ -24,6 +24,8 @@ module LolesportsApi
       @published = attributes['published']
       @short_name = attributes['shortName']
       @url = attributes['url']
+
+      self
     end
 
     def self.find(league_id)
@@ -37,6 +39,16 @@ module LolesportsApi
           LolesportsApi::Series.new('id' => series)
       end
       @base_object
+    end
+
+    def self.all
+      response = Faraday.get("#{API_URL}.json?parameters%5Bmethod%5D=all")
+      leagues_json = JSON.parse(response.body)
+      leagues = []
+      leagues_json['leagues'].each do |league|
+        leagues << new(league)
+      end
+      leagues
     end
 
     def name

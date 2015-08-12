@@ -6,7 +6,7 @@ module LolesportsApi
     API_URL = 'http://na.lolesports.com/api/series'
 
     def initialize(attributes)
-      @id = attributes['id']
+      @id = attributes['id'].to_i
       @label = attributes['label']
       @label_public = attributes['labelPublic']
       @season = attributes['season']
@@ -21,6 +21,15 @@ module LolesportsApi
           LolesportsApi::Tournament.new('id' => tournament)
       end
       @base_object
+    end
+
+    def self.all
+      response_json = JSON.parse Faraday.get("#{API_URL}.json").body
+      all_series = []
+      response_json.each do |series|
+        all_series << new(series)
+      end
+      all_series
     end
   end
 end

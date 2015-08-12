@@ -1,0 +1,226 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/league.json?parameters%5Bmethod%5D=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Aug 2015 08:52:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4019'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dadf53ebbcea1c123ddb272fb35af1c121439369551; expires=Thu, 11-Aug-16
+        08:52:31 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1439369550-1"'
+      Expires:
+      - Wed, 12 Aug 2015 09:22:32 GMT
+      Last-Modified:
+      - Wed, 12 Aug 2015 08:52:30 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '306215545'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - EXPIRED
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 214af1d123aa1eb9-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"leagues":[{"color":"#1376A4","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/NA_LCS_Logo_RGB_72dpi.png","defaultTournamentId":"241","defaultSeriesId":0,"internationalLiveStream":[{"language":"English","display_language":"English","streams":[{"title":"Twitch","url":"http://twitch.tv/riotgames","randomize":"33"},{"title":"YouTube","url":"https://www.youtube.com/watch?v=2HGnYUu8Rio","randomize":"33"},{"title":"Azubu","url":"<html>\r\n<head>\r\n<title>Embed</title>\r\n</head>\r\n<body>\r\n\r\n<!--
+        Start of Brightcove Player -->\r\n\r\n<div style=\"display:none\">\r\nRiot_Games\r\n</div>\r\n\r\n<!--\r\nBy
+        use of this code snippet, I agree to the Brightcove Publisher T and C \r\nfound
+        at https://accounts.brightcove.com/en/terms-and-conditions/. \r\n-->\r\n\r\n<script
+        language=\"JavaScript\" type=\"text/javascript\" src=\"http://admin.brightcove.com/js/BrightcoveExperiences.js\"></script>\r\n\r\n<object
+        id=\"myExperience\" class=\"BrightcoveExperience\">\r\n  <param name=\"bgcolor\"
+        value=\"#000000\" />\r\n  <param name=\"width\" value=\"960\" />\r\n  <param
+        name=\"height\" value=\"540\" />\r\n  <param name=\"playerID\" value=\"3565671771001\"
+        />\r\n  <param name=\"playerKey\" value=\"AQ~~,AAADDsF76gk~,aeB-sfIIuRjTwkTLK4hQFoRop4lztqKf\"
+        />\r\n  <param name=\"isVid\" value=\"true\" />\r\n  <param name=\"isUI\"
+        value=\"true\" />\r\n  <param name=\"dynamicStreaming\" value=\"true\" />\r\n  <param
+        name=\"quality\" value=\"high\" />\r\n  <param name=\"includeAPI\" value=\"true\"
+        />\r\n  <param name=\"htmlFallback\" value=\"true\" />\r\n  <param name=\"wmode\"
+        value=\"transparent\" />\r\n  <param name=\"@playlistTabs\" value=\"ref:Riot_GamesPlaylist\"
+        />\r\n  <param name=\"@playlistCombo\"  value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param
+        name=\"@videoList\" value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param name=\"adServerURL\"
+        value=\"http://pubads.g.doubleclick.net/gampad/ads?sz=480x270&iu=/7085766/AzubuProdBrowser/EmbedLive/Riot_Games&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&min_ad_duration=0&max_ad_duration=30000&url=[referrer_url]&correlator=[timestamp]&sdmax=120000&cust_params=channelname%3DRiot_Games%26teamname%3DRiot%26eventname%3D\"
+        />\r\n\r\n\r\n</object>\r\n\r\n<!-- \r\nThis script tag will cause the Brightcove
+        Players defined above it to be created as soon\r\nas the line is read by the
+        browser. If you wish to have the player instantiated only after\r\nthe rest
+        of the HTML is processed and the page load is complete, remove the line.\r\n-->\r\n<script
+        type=\"text/javascript\">brightcove.createExperiences();</script>\r\n\r\n<!--
+        End of Brightcove Player -->\r\n</body>\r\n</html>","randomize":"33"}]},{"language":"Spanish","display_language":"Spanish","streams":[{"title":"Twitch","url":"http://twitch.tv/eslspain","randomize":"0"}]},{"language":"Russian","display_language":"Russian","streams":[{"title":"Twitch","url":"http://twitch.tv/lolstarladder","randomize":"0"}]},{"language":"French","display_language":"French","streams":[{"title":"Millenium","url":"<iframe
+        src=\"http://millenium-tv2.nexus.mnium.org:44302/player.html?volume=1&autoplay=1&quality=480\"
+        width=\"960\" height=\"540\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>
+        ","randomize":"100"}]},{"language":"Swedish","display_language":"Swedish","streams":[{"title":"viagame","url":"<iframe
+        width=''832px'' height=''509px'' class=''viagame'' src=''http://www.viagame.com/embed/410087''
+        frameborder=''0'' allowfullscreen></iframe>","randomize":0}]}],"shortName":"NA
+        LCS","leagueTournaments":[7,11,13,19,23,28,33,77,95,104,124,168,181,184,185,197,211,220,226,241,248],"leagueSeries":[20],"noVods":0,"menuWeight":"10","published":true,"url":"http://euw.lolesports.com/na-lcs","label":"NA
+        LCS","id":"1"},{"color":"#CA3B3B","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/EU_LCS_Logo_RGB_72dpi.png","defaultTournamentId":"240","defaultSeriesId":0,"internationalLiveStream":[{"language":"English","display_language":"English","streams":[{"title":"Twitch","url":"http://twitch.tv/riotgames","randomize":"33"},{"title":"YouTube","url":"https://www.youtube.com/watch?v=2HGnYUu8Rio","randomize":"33"},{"title":"Azubu","url":"<html>\r\n<head>\r\n<title>Embed</title>\r\n</head>\r\n<body>\r\n\r\n<!--
+        Start of Brightcove Player -->\r\n\r\n<div style=\"display:none\">\r\nRiot_Games\r\n</div>\r\n\r\n<!--\r\nBy
+        use of this code snippet, I agree to the Brightcove Publisher T and C \r\nfound
+        at https://accounts.brightcove.com/en/terms-and-conditions/. \r\n-->\r\n\r\n<script
+        language=\"JavaScript\" type=\"text/javascript\" src=\"http://admin.brightcove.com/js/BrightcoveExperiences.js\"></script>\r\n\r\n<object
+        id=\"myExperience\" class=\"BrightcoveExperience\">\r\n  <param name=\"bgcolor\"
+        value=\"#000000\" />\r\n  <param name=\"width\" value=\"960\" />\r\n  <param
+        name=\"height\" value=\"540\" />\r\n  <param name=\"playerID\" value=\"3565671771001\"
+        />\r\n  <param name=\"playerKey\" value=\"AQ~~,AAADDsF76gk~,aeB-sfIIuRjTwkTLK4hQFoRop4lztqKf\"
+        />\r\n  <param name=\"isVid\" value=\"true\" />\r\n  <param name=\"isUI\"
+        value=\"true\" />\r\n  <param name=\"dynamicStreaming\" value=\"true\" />\r\n  <param
+        name=\"quality\" value=\"high\" />\r\n  <param name=\"includeAPI\" value=\"true\"
+        />\r\n  <param name=\"htmlFallback\" value=\"true\" />\r\n  <param name=\"wmode\"
+        value=\"transparent\" />\r\n  <param name=\"@playlistTabs\" value=\"ref:Riot_GamesPlaylist\"
+        />\r\n  <param name=\"@playlistCombo\"  value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param
+        name=\"@videoList\" value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param name=\"adServerURL\"
+        value=\"http://pubads.g.doubleclick.net/gampad/ads?sz=480x270&iu=/7085766/AzubuProdBrowser/EmbedLive/Riot_Games&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&min_ad_duration=0&max_ad_duration=30000&url=[referrer_url]&correlator=[timestamp]&sdmax=120000&cust_params=channelname%3DRiot_Games%26teamname%3DRiot%26eventname%3D\"
+        />\r\n\r\n\r\n</object>\r\n\r\n<!-- \r\nThis script tag will cause the Brightcove
+        Players defined above it to be created as soon\r\nas the line is read by the
+        browser. If you wish to have the player instantiated only after\r\nthe rest
+        of the HTML is processed and the page load is complete, remove the line.\r\n-->\r\n<script
+        type=\"text/javascript\">brightcove.createExperiences();</script>\r\n\r\n<!--
+        End of Brightcove Player -->\r\n</body>\r\n</html>","randomize":"33"}]},{"language":"Spanish","display_language":"Spanish","streams":[{"title":"Twitch","url":"http://twitch.tv/riotgameses","randomize":"0"}]},{"language":"Portuguese","display_language":"Portuguese","streams":[{"title":"Twitch","url":"http://twitch.tv/x5tv2","randomize":"0"}]},{"language":"Turkish","display_language":"Turkish","streams":[{"title":"Twitch","url":"http://twitch.tv/riotgamesturkish","randomize":"0"}]},{"language":"Polish","display_language":"Polish","streams":[{"title":"Twitch","url":"http://www.twitch.tv/esltvpl_lol","randomize":"0"}]},{"language":"Russian","display_language":"Russian","streams":[{"title":"Twitch","url":"http://twitch.tv/lolstarladder","randomize":"0"}]},{"language":"French","display_language":"French","streams":[{"title":"Millenium","url":"<iframe
+        src=\"http://millenium-tv2.nexus.mnium.org:44302/player.html?volume=1&autoplay=1&quality=480\"
+        width=\"750\" height=\"422\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>
+        ","randomize":"0"},{"title":"Eclypsia","url":"<iframe frameborder=\"0\" width=\"940\"
+        height=\"560\" src=\"http://www.dailymotion.com/embed/video/x155t0i\"></iframe>","randomize":"0"},{"title":"OGaming","url":"<iframe
+        frameborder=\"0\" width=\"940\" height=\"560\" src=\"http://www.dailymotion.com/embed/video/x21vgzj\"></iframe>","randomize":"0"}]},{"language":"German","display_language":"German","streams":[{"title":"ESL","url":"http://www.twitch.tv/taketvesl_lol","randomize":"0"},{"title":"Freaks4U","url":"http://www.twitch.tv/besserwerdenimranked","randomize":"0"}]},{"language":"Italian","display_language":"Italian","streams":[{"title":"Twitch","url":"http://www.twitch.tv/iesptv","randomize":0}]},{"language":"Swedish","display_language":"Swedish","streams":[{"title":"viagame","url":"<iframe
+        width=''832px'' height=''509px'' class=''viagame'' src=''http://www.viagame.com/embed/409421''
+        frameborder=''0'' allowfullscreen></iframe>","randomize":0}]}],"shortName":"EU
+        LCS","leagueTournaments":[9,10,12,21,22,29,39,73,92,102,156,158,167,186,187,188,195,210,219,225,240,247],"leagueSeries":[22],"noVods":0,"menuWeight":"11","published":true,"url":"http://euw.lolesports.com/eu-lcs","label":"EU
+        LCS","id":"2"},{"color":"#D5A235","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/ASG_logo.png","defaultTournamentId":0,"defaultSeriesId":"9","internationalLiveStream":[{"language":"English","display_language":"","streams":[{"title":"Azubu","url":"<object
+        id=\"myExperience\" class=\"BrightcoveExperience\" data=\"http://c.brightcove.com/services/viewer/federated_f9?&amp;width=940&amp;height=560&amp;flashID=myExperience&amp;bgcolor=%23FFFFFF&amp;playerID=3540969465001&amp;playerKey=AQ~~,AAADDsF76gk~,aeB-sfIIuRgsIMuJrx54cyJsYBSyiJ-3&amp;isVid=true&amp;isUI=true&amp;@videoList=ref:Riot_GamesPlaylist&amp;dynamicStreaming=true&amp;autoStart=true&amp;debuggerID=&amp;adServerURL=http%3A%2F%2Fpubads.g.doubleclick.net%2Fgampad%2Fads%3Fsz%3D480x270%26iu%3D%2F7085766%2FAzubuProdBrowser%2FLive%2FRiot_Games%26ciu_szs%26impl%3Ds%26gdfp_req%3D1%26env%3Dvp%26output%3Dxml_vast2%26unviewed_position_start%3D1pod%3D3%26url%3D%5Breferrer_url%5D%26correlator%3D%5Btimestamp%5D&amp;\"
+        id=\"myExperience\" width=\"940\" height=\"560\" class=\"BrightcoveExperience\"
+        seamlesstabbing=\"undefined\">\r\n          <param name=\"bgcolor\" value=\"#FFFFFF\"
+        />\r\n          <param name=\"playerID\" value=\"3540969465001\" />\r\n          <param
+        name=\"playerKey\" value=\"AQ~~,AAADDsF76gk~,aeB-sfIIuRgsIMuJrx54cyJsYBSyiJ-3\"
+        />\r\n          <param name=\"isVid\" value=\"true\" />\r\n          <param
+        name=\"isUI\" value=\"true\" />\r\n          <param name=\"width\" value=\"960\"
+        />\r\n          <param name=\"height\" value=\"540\" />\r\n          <param
+        name=\"quality\" value=\"high\">\r\n          <param name=\"dynamicStreaming\"
+        value=\"true\" />\r\n          <param name=\"@playlistTabs\" value=\"ref:Riot_GamesPlaylist\"
+        />\r\n                         <param name=\"@playlistCombo\"  value=\"ref:Riot_GamesPlaylist\"/>\r\n          <param
+        name=\"@videoList\" value=\"ref:Riot_GamesPlaylist\"/>\r\n          <param
+        name=\"adServerURL\" value=\"\" />\r\n          <param name=\"dynamicStreaming\"
+        value=\"true\" />\r\n          <param name=\"includeAPI\" value=\"true\" />\r\n          <param
+        name=\"htmlFallback\" value=\"true\" />\r\n          <param name=\"wmode\"
+        value=\"window\">\r\n        </object>","randomize":"1"},{"title":"Twitch","url":"http://www.twitch.tv/riotgames","randomize":"1"},{"title":"YouTube","url":"https://www.youtube.com/watch?v=HSnLeGUWnYg","randomize":"1"}]},{"language":"Espanol","display_language":"","streams":[{"title":"ESL","url":"http://www.twitch.tv/riotgameses","randomize":0},{"title":"RiotGamesES","url":"https://www.youtube.com/watch?v=LDysQWnQBOc","randomize":0}]},{"language":"Espanol
+        (LATAM)","display_language":"","streams":[{"title":"Riot / eTech","url":"http://www.twitch.tv/riotgameslatino","randomize":0}]},{"language":"Francais","display_language":"","streams":[{"title":"Ogaming","url":"<iframe
+        frameborder=\"0\" width=\"940\" height=\"560\" src=\"http://www.dailymotion.com/embed/video/xz6tk7\"></iframe>","randomize":"100"},{"title":"Eclypsia","url":"<iframe
+        frameborder=\"0\" width=\"940\" height=\"560\" src=\"http://www.dailymotion.com/embed/video/xq3p3u\"></iframe>","randomize":0},{"title":"Millenium
+        ","url":"<iframe src=\"http://millenium-tv2.nexus.mnium.org:44302/player.html?volume=1&autoplay=0&quality=480\"
+        width=\"940\" height=\"560\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\"></iframe>","randomize":0}]},{"language":"Russian","display_language":"","streams":[{"title":"LoLStarLadder","url":"http://www.twitch.tv/lolstarladder","randomize":0}]},{"language":"Deutsch","display_language":"","streams":[{"title":"ESL","url":"http://www.twitch.tv/taketvesl_lol","randomize":0},{"title":"ESGN","url":"http://http://www.twitch.tv/esgntv_lol","randomize":"100"},{"title":"Freaks4U","url":"http://http://www.twitch.tv/besserwerdenimranked","randomize":0}]},{"language":"Thai","display_language":"","streams":[{"title":"Garena","url":"https://www.youtube.com/watch?v=CxDhRLd3AeM","randomize":0}]},{"language":"Vietnamese","display_language":"","streams":[{"title":"Garena","url":"https://www.youtube.com/watch?v=pdj4ebb-gRM","randomize":0}]},{"language":"Japanese","display_language":"","streams":[{"title":"JapanEsports","url":"http://www.twitch.tv/japanesports","randomize":0}]},{"language":"Polish","display_language":"","streams":[{"title":"ESL
+        Poland","url":"http://www.twitch.tv/esltvpl_lol","randomize":0}]},{"language":"Portugues","display_language":"","streams":[{"title":"Agencia
+        X5","url":"http://www.twitch.tv/x5tv2","randomize":0}]},{"language":"Italiano","display_language":"","streams":[{"title":"LoLItaliaTV","url":"http://www.twitch.tv/iesptv/","randomize":0}]},{"language":"Korean","display_language":"","streams":[{"title":"OGN","url":"http://www.twitch.tv/ongamenet2","randomize":0}]},{"language":"Turkish","display_language":"","streams":[{"title":"RiotGamesTR","url":"http://www.twitch.tv/riotgamesturkish","randomize":0}]},{"language":"Taiwanese","display_language":"","streams":[{"title":"Garena
+        (Twitch)","url":"http://www.twitch.tv/garenatw","randomize":0},{"title":"Garena
+        (YouTube)","url":"https://www.youtube.com/watch?v=pOt5REkiVNE","randomize":0}]},{"language":"Greek","display_language":"","streams":[{"title":"E_Gaming","url":"http://www.twitch.tv/e_gaming","randomize":0}]}],"shortName":"All-Star","leagueTournaments":[100,101],"leagueSeries":[9],"noVods":0,"menuWeight":"30","published":true,"url":"http://euw.lolesports.com/all-star","label":"All-Star","id":"3"},{"color":"#a0a0a0","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/WC_2014_Logo-1_0.png","defaultTournamentId":0,"defaultSeriesId":"19","internationalLiveStream":[{"language":"English","display_language":"English","streams":[{"title":"Twitch","url":"http://www.twitch.tv/riotgames","randomize":"33"},{"title":"YouTube","url":"https://www.youtube.com/watch?v=Rxu9gNHXoP0","randomize":"33"},{"title":"Azubu","url":"html>\r\n<head>\r\n<title>Embed</title>\r\n</head>\r\n<body>\r\n\r\n<!--
+        Start of Brightcove Player -->\r\n\r\n<div style=\"display:none\">\r\nRiot_Games\r\n</div>\r\n\r\n<!--\r\nBy
+        use of this code snippet, I agree to the Brightcove Publisher T and C \r\nfound
+        at https://accounts.brightcove.com/en/terms-and-conditions/. \r\n-->\r\n\r\n<script
+        language=\"JavaScript\" type=\"text/javascript\" src=\"http://admin.brightcove.com/js/BrightcoveExperiences.js\"></script>\r\n\r\n<object
+        id=\"myExperience\" class=\"BrightcoveExperience\">\r\n  <param name=\"bgcolor\"
+        value=\"#000000\" />\r\n  <param name=\"width\" value=\"960\" />\r\n  <param
+        name=\"height\" value=\"540\" />\r\n  <param name=\"playerID\" value=\"3565671771001\"
+        />\r\n  <param name=\"playerKey\" value=\"AQ~~,AAADDsF76gk~,aeB-sfIIuRjTwkTLK4hQFoRop4lztqKf\"
+        />\r\n  <param name=\"isVid\" value=\"true\" />\r\n  <param name=\"isUI\"
+        value=\"true\" />\r\n  <param name=\"dynamicStreaming\" value=\"true\" />\r\n  <param
+        name=\"quality\" value=\"high\" />\r\n  <param name=\"includeAPI\" value=\"true\"
+        />\r\n  <param name=\"htmlFallback\" value=\"true\" />\r\n  <param name=\"wmode\"
+        value=\"transparent\" />\r\n  <param name=\"@playlistTabs\" value=\"ref:Riot_GamesPlaylist\"
+        />\r\n  <param name=\"@playlistCombo\"  value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param
+        name=\"@videoList\" value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param name=\"adServerURL\"
+        value=\"http://pubads.g.doubleclick.net/gampad/ads?sz=480x270&iu=/7085766/AzubuProdBrowser/EmbedLive/Riot_Games&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&min_ad_duration=0&max_ad_duration=30000&url=[referrer_url]&correlator=[timestamp]&sdmax=120000&cust_params=channelname%3DRiot_Games%26teamname%3DRiot%26eventname%3D\"
+        />\r\n\r\n\r\n</object>\r\n\r\n<!-- \r\nThis script tag will cause the Brightcove
+        Players defined above it to be created as soon\r\nas the line is read by the
+        browser. If you wish to have the player instantiated only after\r\nthe rest
+        of the HTML is processed and the page load is complete, remove the line.\r\n-->\r\n<script
+        type=\"text/javascript\">brightcove.createExperiences();</script>\r\n\r\n<!--
+        End of Brightcove Player -->\r\n</body>\r\n</html>","randomize":"33"}]},{"language":"Spanish","display_language":"Spanish","streams":[{"title":"ESL
+        Spain","url":"twitch.tv/eslspain","randomize":0}]},{"language":"Russian","display_language":"Russian","streams":[{"title":"LoLStar
+        Ladder","url":"twitch.tv/lolstarladder","randomize":0}]},{"language":"French","display_language":"French","streams":[{"title":"OGaming","url":"http://www.dailymotion.com/embed/video/x21vgzj","randomize":0},{"title":"Millenium","url":"http://millenium-tv2.nexus.mnium.org:44302/player.html?volume=1&autoplay=1&quality=480","randomize":0},{"title":"Eclypsia","url":"http://www.dailymotion.com/embed/video/x155t0i","randomize":0}]},{"language":"Polish","display_language":"Polish","streams":[{"title":"ESL
+        Poland","url":"twitch.tv/esltvpl_lol","randomize":0}]},{"language":"Korean","display_language":"Korean","streams":[{"title":"OGN","url":"twitch.tv/ongamenet2","randomize":0}]},{"language":"Portuguese","display_language":"Portuguese","streams":[{"title":"Twitch","url":"twitch.tv/x5tv2","randomize":0},{"title":"Azubu","url":"www.azubu.tv/x5tv2","randomize":0}]},{"language":"Italian","display_language":"Italian","streams":[{"title":"GEC","url":"twitch.tv/gec","randomize":0}]},{"language":"German","display_language":"German","streams":[{"title":"Freaks4U","url":"twitch.tv/besserwerdenimranked","randomize":0},{"title":"ESL
+        German","url":"twitch.tv/taketvesl_lol","randomize":0}]},{"language":"Turkish","display_language":"Turkish","streams":[{"title":"Riot
+        Games TR","url":"twitch.tv/riotgamesturkish","randomize":0}]},{"language":"Bulgarian","display_language":"Bulgarian","streams":[{"title":"MTGx","url":"http://www.viagame.com/channels/lcs-worlds/445701","randomize":0}]},{"language":"Romanian","display_language":"Romanian","streams":[{"title":"MTGx","url":"http://www.viagame.com/channels/lcs-worlds/445711","randomize":0}]},{"language":"Swedish","display_language":"Swedish","streams":[{"title":"MTGx","url":"http://www.viagame.com/channels/lcs-worlds/445699","randomize":0}]},{"language":"Czech","display_language":"Czech","streams":[{"title":"MTGx","url":"http://www.viagame.com/channels/lcs-worlds/445713","randomize":0}]},{"language":"Chinese","display_language":"Chinese","streams":[{"title":"GarenaTW","url":"twitch.tv/GarenaTW","randomize":0}]}],"shortName":"Worlds","leagueTournaments":[24,25,26,175,176,177,178,179],"leagueSeries":[1,19],"noVods":0,"menuWeight":"50","published":true,"url":"http://euw.lolesports.com/worlds","label":"World
+        Championship","id":"4"},{"color":"#2c9fc6","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/NA_CS_logo.png","defaultTournamentId":"242","defaultSeriesId":0,"internationalLiveStream":[{"language":"English","display_language":"English","streams":[{"title":"twitch","url":"http://twitch.tv/riotgames","randomize":"33"},{"title":"youtube","url":"https://www.youtube.com/watch?v=pPcaK-vHhpk","randomize":"33"},{"title":"azubu","url":"<html>\r\n<head>\r\n<title>Embed</title>\r\n</head>\r\n<body>\r\n\r\n<!--
+        Start of Brightcove Player -->\r\n\r\n<div style=\"display:none\">\r\nRiot_Games\r\n</div>\r\n\r\n<!--\r\nBy
+        use of this code snippet, I agree to the Brightcove Publisher T and C \r\nfound
+        at https://accounts.brightcove.com/en/terms-and-conditions/. \r\n-->\r\n\r\n<script
+        language=\"JavaScript\" type=\"text/javascript\" src=\"http://admin.brightcove.com/js/BrightcoveExperiences.js\"></script>\r\n\r\n<object
+        id=\"myExperience\" class=\"BrightcoveExperience\">\r\n  <param name=\"bgcolor\"
+        value=\"#000000\" />\r\n  <param name=\"width\" value=\"720\" />\r\n  <param
+        name=\"height\" value=\"480\" />\r\n  <param name=\"playerID\" value=\"3565671771001\"
+        />\r\n  <param name=\"playerKey\" value=\"AQ~~,AAADDsF76gk~,aeB-sfIIuRjTwkTLK4hQFoRop4lztqKf\"
+        />\r\n  <param name=\"isVid\" value=\"true\" />\r\n  <param name=\"isUI\"
+        value=\"true\" />\r\n  <param name=\"dynamicStreaming\" value=\"true\" />\r\n  <param
+        name=\"quality\" value=\"high\" />\r\n  <param name=\"includeAPI\" value=\"true\"
+        />\r\n  <param name=\"htmlFallback\" value=\"true\" />\r\n  <param name=\"wmode\"
+        value=\"transparent\" />\r\n  <param name=\"@playlistTabs\" value=\"ref:Riot_GamesPlaylist\"
+        />\r\n  <param name=\"@playlistCombo\"  value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param
+        name=\"@videoList\" value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param name=\"adServerURL\"
+        value=\"http://pubads.g.doubleclick.net/gampad/ads?sz=480x270&iu=/7085766/AzubuProdBrowser/EmbedLive/Riot_Games&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&min_ad_duration=0&max_ad_duration=30000&url=[referrer_url]&correlator=[timestamp]&sdmax=120000&cust_params=channelname%3DRiot_Games%26teamname%3DRiot%26eventname%3D\"
+        />\r\n\r\n\r\n</object>\r\n\r\n<!-- \r\nThis script tag will cause the Brightcove
+        Players defined above it to be created as soon\r\nas the line is read by the
+        browser. If you wish to have the player instantiated only after\r\nthe rest
+        of the HTML is processed and the page load is complete, remove the line.\r\n-->\r\n<script
+        type=\"text/javascript\">brightcove.createExperiences();</script>\r\n\r\n<!--
+        End of Brightcove Player -->\r\n</body>\r\n</html>","randomize":"33"}]}],"shortName":"na-cs","leagueTournaments":[31,32,34,35,36,49,56,57,58,59,60,68,76,105,106,107,108,109,115,119,150,151,152,153,154,155,205,209,214,235,236,242],"leagueSeries":[2,5,10,16],"noVods":0,"menuWeight":"20","published":true,"url":"http://euw.lolesports.com/na-cs","label":"NA
+        Challenger Series","id":"6"},{"color":"#e3662b","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/EU_CS_logo.png","defaultTournamentId":"243","defaultSeriesId":0,"internationalLiveStream":[{"language":"English","display_language":"English","streams":[{"title":"twitch","url":"http://www.twitch.tv/riotgames","randomize":"33"},{"title":"youtube","url":"https://www.youtube.com/watch?v=M_tSkAE1IXw","randomize":"33"},{"title":"azubu","url":"<html>\r\n<head>\r\n<title>Embed</title>\r\n</head>\r\n<body>\r\n\r\n<!--
+        Start of Brightcove Player -->\r\n\r\n<div style=\"display:none\">\r\nRiot_Games\r\n</div>\r\n\r\n<!--\r\nBy
+        use of this code snippet, I agree to the Brightcove Publisher T and C \r\nfound
+        at https://accounts.brightcove.com/en/terms-and-conditions/. \r\n-->\r\n\r\n<script
+        language=\"JavaScript\" type=\"text/javascript\" src=\"http://admin.brightcove.com/js/BrightcoveExperiences.js\"></script>\r\n\r\n<object
+        id=\"myExperience\" class=\"BrightcoveExperience\">\r\n  <param name=\"bgcolor\"
+        value=\"#000000\" />\r\n  <param name=\"width\" value=\"720\" />\r\n  <param
+        name=\"height\" value=\"480\" />\r\n  <param name=\"playerID\" value=\"3565671771001\"
+        />\r\n  <param name=\"playerKey\" value=\"AQ~~,AAADDsF76gk~,aeB-sfIIuRjTwkTLK4hQFoRop4lztqKf\"
+        />\r\n  <param name=\"isVid\" value=\"true\" />\r\n  <param name=\"isUI\"
+        value=\"true\" />\r\n  <param name=\"dynamicStreaming\" value=\"true\" />\r\n  <param
+        name=\"quality\" value=\"high\" />\r\n  <param name=\"includeAPI\" value=\"true\"
+        />\r\n  <param name=\"htmlFallback\" value=\"true\" />\r\n  <param name=\"wmode\"
+        value=\"transparent\" />\r\n  <param name=\"@playlistTabs\" value=\"ref:Riot_GamesPlaylist\"
+        />\r\n  <param name=\"@playlistCombo\"  value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param
+        name=\"@videoList\" value=\"ref:Riot_GamesPlaylist\"/>\r\n  <param name=\"adServerURL\"
+        value=\"http://pubads.g.doubleclick.net/gampad/ads?sz=480x270&iu=/7085766/AzubuProdBrowser/EmbedLive/Riot_Games&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&min_ad_duration=0&max_ad_duration=30000&url=[referrer_url]&correlator=[timestamp]&sdmax=120000&cust_params=channelname%3DRiot_Games%26teamname%3DRiot%26eventname%3D\"
+        />\r\n\r\n\r\n</object>\r\n\r\n<!-- \r\nThis script tag will cause the Brightcove
+        Players defined above it to be created as soon\r\nas the line is read by the
+        browser. If you wish to have the player instantiated only after\r\nthe rest
+        of the HTML is processed and the page load is complete, remove the line.\r\n-->\r\n<script
+        type=\"text/javascript\">brightcove.createExperiences();</script>\r\n\r\n<!--
+        End of Brightcove Player -->\r\n</body>\r\n</html>","randomize":"33"}]}],"shortName":"eu-cs","leagueTournaments":[38,40,41,42,43,48,50,62,63,64,65,66,67,75,110,111,112,113,114,116,118,144,145,146,147,148,149,206,208,213,232,239,243],"leagueSeries":[3,6,11,15],"noVods":0,"menuWeight":"21","published":true,"url":"http://euw.lolesports.com/eu-cs","label":"EU
+        Challenger Series","id":"7"},{"color":"#6f678f","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/OGNCHAMPIONS_white.png","defaultTournamentId":"230","defaultSeriesId":0,"internationalLiveStream":[{"language":"English","display_language":"English","streams":[{"title":"Twitch","url":"http://www.twitch.tv/ongamenet","randomize":0}]}],"shortName":"lck","leagueTournaments":[79,80,81,82,83,138,139,140,142,143,162,174,194,215,223,224,230,245],"leagueSeries":[8,14,26],"noVods":0,"menuWeight":"12","published":true,"url":"http://euw.lolesports.com/lck","label":"LCK
+        - Champions Korea ","id":"8"},{"color":"#666666","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/LPL_logo.png","defaultTournamentId":0,"defaultSeriesId":"27","internationalLiveStream":[{"language":"English","display_language":"English","streams":[{"title":"LPL","url":"twitch.tv/lplen","randomize":0}]}],"shortName":"lpl-china","leagueTournaments":[72,117,133,163,164,165,173,204,217,218,231,249,250,251],"leagueSeries":[7,13,17,27],"noVods":0,"menuWeight":"13","published":true,"url":"http://euw.lolesports.com/lpl-china","label":"LPL
+        China","id":"9"},{"color":"#990000","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/LMS_logo.png","defaultTournamentId":"246","defaultSeriesId":0,"internationalLiveStream":null,"shortName":"LMS","leagueTournaments":[199,212,229,244,246],"leagueSeries":null,"noVods":0,"menuWeight":"15","published":true,"url":"http://euw.lolesports.com/lms","label":"LMS
+        Taiwan","id":"12"},{"color":"#f1b167","leagueImage":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/MSI_LOGO.png","defaultTournamentId":0,"defaultSeriesId":"25","internationalLiveStream":null,"shortName":"MSI","leagueTournaments":[221,222],"leagueSeries":[25],"noVods":0,"menuWeight":"35","published":true,"url":"http://euw.lolesports.com/msi","label":"Mid-Season
+        Invitational","id":"14"}]}'
+    http_version: 
+  recorded_at: Wed, 12 Aug 2015 08:52:32 GMT
+recorded_with: VCR 2.9.3
