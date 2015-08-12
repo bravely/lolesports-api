@@ -27,9 +27,7 @@ module LolesportsApi
       @date_time =
         DateTime.parse(attributes['dateTime']) if attributes['dateTime']
 
-      if attributes['contestants']
-        @blue_team, @red_team = self.class.prepared_teams(attributes)
-      end
+      prepare_teams(attributes)
 
       self
     end
@@ -39,16 +37,14 @@ module LolesportsApi
       @attributes['players'].each_value do |player|
         @base_object.players << LolesportsApi::Play.new(player)
       end
-      @base_object.blue_team, @base_object.red_team =
-        prepared_teams(@attributes)
+      @base_object.prepare_teams(@attributes)
       @base_object
     end
 
-    def self.prepared_teams(attrs)
-      blue_team = LolesportsApi::Team.new(attrs['contestants']['blue'])
-      red_team = LolesportsApi::Team.new(attrs['contestants']['red'])
-
-      [blue_team, red_team]
+    def prepare_teams(attrs)
+      return unless attrs['contestants']
+      @blue_team = LolesportsApi::Team.new(attrs['contestants']['blue'])
+      @red_team = LolesportsApi::Team.new(attrs['contestants']['red'])
     end
   end
 end

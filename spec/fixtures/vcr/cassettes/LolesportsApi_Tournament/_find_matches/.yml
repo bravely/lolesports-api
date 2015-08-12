@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/schedule.json?tournamentId=241
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Aug 2015 04:58:03 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '885'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df8ad6408c6103455912202618279f7f21439355482; expires=Thu, 11-Aug-16
+        04:58:02 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1439355481-1"'
+      Expires:
+      - Wed, 12 Aug 2015 05:28:03 GMT
+      Last-Modified:
+      - Wed, 12 Aug 2015 04:58:01 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '306123803'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - EXPIRED
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 21499a579bc82846-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"Match5334":{"dateTime":"2015-08-09T19:00Z","winnerId":"1","matchId":"5334","url":"/tourney/match/5334","maxGames":"5","isLive":false,"isFinished":"1","tournament":{"id":"241","name":"2015
+        NA LCS Summer Playoffs","round":"1"},"contestants":{"blue":{"id":"3656","name":"Gravity","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/gravity-logo.png?itok=5v3hjeIU","acronym":"GV","wins":1,"losses":3},"red":{"id":"1","name":"Team
+        SoloMid","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/TSM%20logovector%20-white.png?itok=uAifgYKt","acronym":"TSM","wins":3,"losses":1}},"liveStreams":false,"polldaddyId":"8998184:40947505:40947506","games":{"game0":{"id":"7067","winnerId":"1","noVods":0,"hasVod":1},"game1":{"id":"7273","winnerId":"3656","noVods":0,"hasVod":1},"game2":{"id":"7274","winnerId":"1","noVods":0,"hasVod":1},"game3":{"id":"7284","winnerId":"1","noVods":0,"hasVod":1}},"name":"Gravity
+        vs Team SoloMid"},"Match5335":{"dateTime":"2015-08-08T19:00Z","winnerId":"3657","matchId":"5335","url":"/tourney/match/5335","maxGames":"5","isLive":false,"isFinished":"1","tournament":{"id":"241","name":"2015
+        NA LCS Summer Playoffs","round":"1"},"contestants":{"blue":{"id":"3657","name":"Team
+        Impulse","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/TIP_Logo.png?itok=xSnhbv8a","acronym":"TIP","wins":3,"losses":0},"red":{"id":"3","name":"Team
+        Dignitas","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/dig_logo_1.png?itok=t1mfuQzI","acronym":"DIG","wins":0,"losses":3}},"liveStreams":false,"polldaddyId":"8998183:40947503:40947504","games":{"game0":{"id":"7068","winnerId":"3657","noVods":0,"hasVod":1},"game1":{"id":"7258","winnerId":"3657","noVods":0,"hasVod":1},"game2":{"id":"7259","winnerId":"3657","noVods":0,"hasVod":1}},"name":"Team
+        Impulse vs Team Dignitas"},"Match5336":{"dateTime":"2015-08-16T19:00Z","winnerId":"","matchId":"5336","url":"/tourney/match/5336","maxGames":"5","isLive":false,"isFinished":"0","tournament":{"id":"241","name":"2015
+        NA LCS Summer Playoffs","round":"2"},"contestants":{"blue":{"id":"3654","name":"Team
+        Liquid","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/teamliquid-logo.png?itok=ElClHuYD","acronym":"TL","wins":0,"losses":0},"red":{"id":"1","name":"Team
+        SoloMid","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/TSM%20logovector%20-white.png?itok=uAifgYKt","acronym":"TSM","wins":3,"losses":1}},"liveStreams":false,"polldaddyId":"9018654:41041548:41041549","games":{"game0":{"id":"7069","winnerId":"","noVods":0,"hasVod":0}},"name":"Team
+        Liquid vs TBD"},"Match5337":{"dateTime":"2015-08-15T19:00Z","winnerId":"","matchId":"5337","url":"/tourney/match/5337","maxGames":"5","isLive":false,"isFinished":"0","tournament":{"id":"241","name":"2015
+        NA LCS Summer Playoffs","round":"2"},"contestants":{"blue":{"id":"2","name":"Counter
+        Logic Gaming","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/600px-Clg_logo2.png?itok=IMlyyajm","acronym":"CLG","wins":0,"losses":0},"red":{"id":"3657","name":"Team
+        Impulse","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/styles/grid_medium_square/public/TIP_Logo.png?itok=xSnhbv8a","acronym":"TIP","wins":3,"losses":0}},"liveStreams":false,"polldaddyId":"9017580:41036511:41036512","games":{"game0":{"id":"7070","winnerId":"","noVods":0,"hasVod":0}},"name":"Counter
+        Logic Gaming vs TBD"},"Match5338":{"dateTime":"2015-08-23T20:00Z","winnerId":"","matchId":"5338","url":"/tourney/match/5338","maxGames":"5","isLive":false,"isFinished":"0","tournament":{"id":"241","name":"2015
+        NA LCS Summer Playoffs","round":"3"},"contestants":null,"liveStreams":false,"polldaddyId":"
+        ","games":{"game0":{"id":"7071","winnerId":"","noVods":0,"hasVod":0}},"name":"TBD
+        vs TBD"},"Match5339":{"dateTime":"2015-08-22T22:00Z","winnerId":"","matchId":"5339","url":"/tourney/match/5339","maxGames":"5","isLive":false,"isFinished":"0","tournament":{"id":"241","name":"2015
+        NA LCS Summer Playoffs","round":"1"},"contestants":null,"liveStreams":false,"polldaddyId":"
+        ","games":{"game0":{"id":"7072","winnerId":"","noVods":0,"hasVod":0}},"name":"TBD
+        vs TBD"}}'
+    http_version: 
+  recorded_at: Wed, 12 Aug 2015 04:58:02 GMT
+recorded_with: VCR 2.9.3
