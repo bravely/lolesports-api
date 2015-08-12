@@ -35,16 +35,33 @@ A common rule throughout the API to keep in mind, is that no single command does
 Any given `LolesportsApi` class(apart from `LolesportsApi::Play`) has the find method. It returns a new instance of that class, with all related properties and objects.
 
 ```ruby
-LolesportsApi::Player.find(330)
-=> 
+hai = LolesportsApi::Player.find(330)
+# => #<LolesportsApi::Player:0x007f9fb3509998 @name="Hai"...>
 ```
 
 #### #reload
-blah
+From any given API object with an `@id` attribute, you can use reload to either update the object or load it with all of its endpoint data.
 
+```ruby
+hai.reload
+# => #<LolesportsApi::Player:0x007f9fb3509998 @name="Hai"...>
+```
+
+### Object Specific Methods
+
+#### .all
+
+This only exists for Leagues and Series. Returns an array of all instances of the object.
+
+```ruby
+leagues = LolesportsApi::League.all
+# => [#<LolesportsApi::League:0x007fd152dfe7f8>, #<LolesportsApi::League:0x00...]
+```
 
 ## TODO
-
+* `LolesportsApi::Tournament.all`, since the API doesn't currently actually return all tournaments. [API Link](http://na.lolesports.com/api/swagger#!/api/getTournaments)
+* `LolesportsApi::Team` list of games. [API Link](http://na.lolesports.com/api/swagger#!/api/getSchedule)
+* Other less useful API objects.
 
 ## Special Thanks
 * Thanks [@levi](https://twitter.com/levi) for [this](https://gist.github.com/levi/e7e5e808ac0119e154ce) documentation.
