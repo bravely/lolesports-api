@@ -1,10 +1,19 @@
 describe LolesportsApi::Tournament do
   describe '.find', vcr: true do
-    let(:tournament) { LolesportsApi::Tournament.find(102) }
-    it { expect(tournament.class).to eq LolesportsApi::Tournament }
-    it { expect(tournament.name).to eq 'EU LCS Summer Split' }
-    it { expect(tournament.id).to eq 102 }
-    it { expect(tournament.contestants[0].id).to eq 1100 }
+    context 'when the Tournament is available' do
+      let(:tournament) { LolesportsApi::Tournament.find(102) }
+      it { expect(tournament.class).to eq LolesportsApi::Tournament }
+      it { expect(tournament.name).to eq 'EU LCS Summer Split' }
+      it { expect(tournament.id).to eq 102 }
+      it { expect(tournament.contestants[0].id).to eq 1100 }
+    end
+    context 'when the Tournament is only for authorized accounts' do
+      it 'raises LolesportsApi::Error::UnauthorizedAccess' do
+        expect do
+          LolesportsApi::Tournament.find(192)
+        end.to raise_error LolesportsApi::Error::UnauthorizedAccess
+      end
+    end
   end
 
   describe '#find_matches', vcr: true do

@@ -16,17 +16,15 @@ module LolesportsApi
 
     def reload
       response = Faraday.get("#{self.class::API_URL}/#{@id}.json")
-      fail_by_status(response) unless response.success?
+      self.class.fail_by_status(response) unless response.success?
       @attributes = JSON.parse(response.body)
       initialize(@attributes)
       self
     end
 
-    private
-
-    def fail_by_status(response)
+    def self.fail_by_status(response)
       klass =
-        LolesportsApi::Error::ERRORS[response.code] || LolesportsApi::Error
+        LolesportsApi::Error::ERRORS[response.status] || LolesportsApi::Error
       fail klass
     end
   end
