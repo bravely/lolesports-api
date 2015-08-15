@@ -18,7 +18,7 @@ module LolesportsApi
       @name_public = attributes['namePublic']
       @no_vods = attributes['noVods']
       @published = attributes['published']
-      @season = attributes['season'].to_i
+      @season = attributes['season']
       @winner = attributes['winner'].to_i
       @round = attributes['round']
       @matches = []
