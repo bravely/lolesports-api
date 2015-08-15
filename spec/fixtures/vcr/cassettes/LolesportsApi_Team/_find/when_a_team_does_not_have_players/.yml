@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/team/4.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Aug 2015 17:42:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '922'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc002d92b2b9546b3cd2d5e409e782ea11439660554; expires=Sun, 14-Aug-16
+        17:42:34 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1439660254-1"'
+      Expires:
+      - Sat, 15 Aug 2015 18:12:34 GMT
+      Last-Modified:
+      - Sat, 15 Aug 2015 17:37:34 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '476039840'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - HIT
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2166b26170010707-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"Curse","bio":"Curse''s roster has fluctuated frequently since
+        its inception, with even NyJacky gone from the original team. Their Season
+        2 performance landed them just shy of the top 3 in North America, a curse
+        that would continue even through present-day. After opening with an 8-0 record
+        to the spring split, the team began to lose steam and have been on a downward
+        decline that not even all-star EdwarD could stave off. EdwarD later returned
+        to Gambit in Europe, and Zekent was added as the starting support. Also adding
+        the formerly banned player, IWillDominate, both he and Curse sought to prove
+        that they were turning over a new leaf in the competitive scene.\r\n\r\nThe
+        2014 spring split met Curse with mixed results. They rode out the split in
+        the middle of the pack, more consistent than the bottom teams, yet not advanced
+        enough to break into the top three. During the split, Curse dropped Zekent
+        and briefly fielded Saintvicious in the support role. While he performed well
+        individually, Curse didn\u2019t see marked success with this new swap, and
+        eventually Saintvicious returned to retirement and Curse picked up Bunny FuFuu
+        in the support role. Finishing the split in fourth place, Bunny FuFuu was
+        moved to a substitute role in favor of former TSM member, Xpecial. Curse will
+        look to the summer split to prove that, with enough time, they can compete
+        for the top spot and a trip to the World Championships.  \r\n","noPlayers":"0","roster":[],"logoUrl":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/CurseLogos_RGB.png","profileUrl":"http://na.lolesports.com/node/4","teamPhotoUrl":"http://na.lolesports.com/","acronym":"CRS"}'
+    http_version: 
+  recorded_at: Sat, 15 Aug 2015 17:42:34 GMT
+recorded_with: VCR 2.9.3

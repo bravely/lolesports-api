@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 05 Aug 2015 05:13:33 GMT
+      - Sat, 15 Aug 2015 17:42:34 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -27,16 +27,16 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=de771f1db6d002794526572affea495441438751612; expires=Thu, 04-Aug-16
-        05:13:32 GMT; path=/; domain=.lolesports.com; HttpOnly
+      - __cfduid=dd637975f1af879bd9d49a1b34f96efaa1439660553; expires=Sun, 14-Aug-16
+        17:42:33 GMT; path=/; domain=.lolesports.com; HttpOnly
       Cache-Control:
       - public, max-age=1800
       Etag:
-      - '"1438751166-1"'
+      - '"1439660554-1"'
       Expires:
-      - Wed, 05 Aug 2015 05:43:33 GMT
+      - Sat, 15 Aug 2015 18:12:34 GMT
       Last-Modified:
-      - Wed, 05 Aug 2015 05:06:06 GMT
+      - Sat, 15 Aug 2015 17:42:34 GMT
       Vary:
       - Accept-Encoding
       Via:
@@ -44,9 +44,9 @@ http_interactions:
       X-Drupal-Cache:
       - MISS
       X-Varnish:
-      - 1377982057 1377979533
+      - '144888865'
       X-Varnish-Cache:
-      - HIT
+      - MISS
       Cf-Cache-Status:
       - EXPIRED
       Accept-Ranges:
@@ -54,7 +54,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 2110036c1d66286a-SJC
+      - 2166b25dad9c11d7-SJC
     body:
       encoding: ASCII-8BIT
       string: '{"name":"Cloud9 ","bio":null,"noPlayers":"0","roster":{"players0":{"playerId":"328","name":"Balls","role":"Top
@@ -64,5 +64,5 @@ http_interactions:
         Lane","isStarter":1},"players7":{"playerId":"1313","name":"Sheep","role":"Support","isStarter":0},"players8":{"playerId":"1353","name":"Yusui","role":"Mid
         Lane","isStarter":0},"players9":{"playerId":"2551","name":"Hard","role":"Jungler","isStarter":0}},"logoUrl":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/cloud9-logo.png","profileUrl":"http://na.lolesports.com/node/304","teamPhotoUrl":"http://na.lolesports.com/","acronym":"C9"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2015 05:13:32 GMT
+  recorded_at: Sat, 15 Aug 2015 17:42:34 GMT
 recorded_with: VCR 2.9.3

@@ -8,6 +8,7 @@ module LolesportsApi
 
     def self.find(base_id)
       response = Faraday.get("#{self::API_URL}/#{base_id}.json")
+      fail_by_status(response) unless response.success?
       @attributes = JSON.parse(response.body)
       @attributes['id'] = base_id
       @base_object = new(@attributes)
@@ -15,9 +16,18 @@ module LolesportsApi
 
     def reload
       response = Faraday.get("#{self.class::API_URL}/#{@id}.json")
+      fail_by_status(response) unless response.success?
       @attributes = JSON.parse(response.body)
       initialize(@attributes)
       self
+    end
+
+    private
+
+    def fail_by_status(response)
+      klass =
+        LolesportsApi::Error::ERRORS[response.code] || LolesportsApi::Error
+      fail klass
     end
   end
 end
