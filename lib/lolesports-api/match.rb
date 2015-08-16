@@ -3,7 +3,7 @@ module LolesportsApi
     attr_reader :id, :blue_team, :red_team, :date_time, :games,
                 :is_finished, :is_live, :live_streams,
                 :max_games, :name, :polldaddy_id, :url,
-                :winner_id
+                :winner_id, :round
 
     attr_accessor :tournament
 
@@ -23,6 +23,9 @@ module LolesportsApi
       @url = attributes['url']
       @winner_id = attributes['winnerId']
 
+      if attributes['tournament']
+        @round = attributes['tournament']['round'].to_i
+      end
       prepare_teams(attributes)
       prepare_games(attributes)
 

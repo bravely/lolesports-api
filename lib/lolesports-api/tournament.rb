@@ -20,7 +20,6 @@ module LolesportsApi
       @published = attributes['published']
       @season = attributes['season']
       @winner = attributes['winner'].to_i
-      @round = attributes['round']
       @matches = []
 
       self

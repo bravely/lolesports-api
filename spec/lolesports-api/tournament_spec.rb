@@ -16,11 +16,12 @@ describe LolesportsApi::Tournament do
     end
   end
 
-  describe '#find_matches', vcr: true do
+  describe '#find_matches', vcr: true, focus: true do
     let(:tournament) do
       LolesportsApi::Tournament.new('id' => 241).tap(&:find_matches)
     end
     it { expect(tournament.matches[0].id).to eq 5334 }
     it { expect(tournament.matches[0].games[0].id).to eq 7067 }
+    it { expect(tournament.winner).to eq 0 }
   end
 end
