@@ -16,7 +16,7 @@ describe LolesportsApi::Tournament do
     end
   end
 
-  describe '#find_matches', vcr: true, focus: true do
+  describe '#find_matches', vcr: true do
     let(:tournament) do
       LolesportsApi::Tournament.new('id' => 241).tap(&:find_matches)
     end

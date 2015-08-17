@@ -9,10 +9,8 @@ module LolesportsApi
     def initialize(attributes)
       @id = attributes['id'].to_i
       @contestants = []
-      @date_begin =
-        Date.parse(attributes['dateBegin']) if attributes['dateBegin']
-      @date_end =
-        Date.parse(attributes['dateEnd']) if attributes['dateEnd']
+      @date_begin = parse_datetime(attributes['dateBegin'])
+      @date_end = parse_datetime(attributes['dateEnd'])
       @is_finished = attributes['isFinished']
       @name = attributes['name']
       @name_public = attributes['namePublic']

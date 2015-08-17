@@ -24,8 +24,7 @@ module LolesportsApi
       @vods = attributes['vods'] || {}
       @winner_id = attributes['winnerId'].to_i
       @has_vod = attributes['hasVod']
-      @date_time =
-        DateTime.parse(attributes['dateTime']) if attributes['dateTime']
+      @date_time = parse_datetime(attributes['dateTime'])
 
       prepare_teams(attributes)
 

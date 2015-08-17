@@ -28,5 +28,11 @@ module LolesportsApi
         LolesportsApi::Error::ERRORS[response.status] || LolesportsApi::Error
       fail klass
     end
+
+    private
+
+    def parse_datetime(attribute)
+      DateTime.parse(attribute) if attribute
+    end
   end
 end

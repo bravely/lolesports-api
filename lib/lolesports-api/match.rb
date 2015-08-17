@@ -11,8 +11,7 @@ module LolesportsApi
 
     def initialize(attributes = {})
       @id = (attributes['id'] || attributes['matchId']).to_i
-      @date_time =
-        DateTime.parse(attributes['dateTime']) if attributes['dateTime']
+      @date_time = parse_datetime(attributes['dateTime'])
       @is_finished = attributes['isFinished']
       @is_live = attributes['isLive']
       @live_streams = attributes['liveStreams']

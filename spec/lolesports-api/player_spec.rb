@@ -3,7 +3,9 @@ describe LolesportsApi::Player do
     let(:player) { LolesportsApi::Player.find(330) }
     it { expect(player.class).to eq LolesportsApi::Player }
     it { expect(player.first_name).to eq 'Hai' }
+    it { expect(player.last_name).to eq 'Lam' }
     it { expect(player.id).to eq 330 }
+    it { expect(player.contract_expiration).to eq DateTime.new(2015, 10, 7) }
   end
 
   describe '.all' do
