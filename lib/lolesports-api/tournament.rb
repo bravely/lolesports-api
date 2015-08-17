@@ -2,7 +2,7 @@ module LolesportsApi
   class Tournament < LolesportsApi::BaseApiObject
     attr_reader :id, :contestants, :date_begin, :date_end,
                 :is_finished, :name, :name_public, :no_vods,
-                :published, :season, :winner, :round, :matches
+                :published, :season, :winner, :matches
 
     API_URL = 'http://na.lolesports.com/api/tournament'
 

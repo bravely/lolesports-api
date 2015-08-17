@@ -18,6 +18,7 @@ module LolesportsApi
       response = Faraday.get("#{self.class::API_URL}/#{@id}.json")
       self.class.fail_by_status(response) unless response.success?
       @attributes = JSON.parse(response.body)
+      @attributes['id'] = @id
       initialize(@attributes)
       self
     end
