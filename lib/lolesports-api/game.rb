@@ -3,7 +3,8 @@ module LolesportsApi
     attr_reader :id, :date_time, :game_length, :game_number,
                 :legs_url, :match_id, :max_games, :no_vods,
                 :platform_game_id, :platform_id, :players,
-                :tournament, :vods, :winner_id, :has_vod
+                :tournament, :vods, :winner_id, :has_vod,
+                :youtube_url
 
     attr_accessor :blue_team, :red_team
 
@@ -25,6 +26,7 @@ module LolesportsApi
       @winner_id = attributes['winnerId'].to_i
       @has_vod = attributes['hasVod']
       @date_time = parse_datetime(attributes['dateTime'])
+      @youtube_url = parse_vods(attributes, 'youtube')
 
       prepare_teams(attributes)
 
@@ -44,6 +46,13 @@ module LolesportsApi
       return unless attrs['contestants']
       @blue_team = LolesportsApi::Team.new(attrs['contestants']['blue'])
       @red_team = LolesportsApi::Team.new(attrs['contestants']['red'])
+    end
+
+    private
+
+    def parse_vods(attrs, type)
+      return nil unless attrs['noVods'] == 0
+      attrs['vods']['vod']['URL'] if attrs['vods']['vod']['type'] == type
     end
   end
 end

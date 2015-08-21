@@ -10,5 +10,8 @@ describe LolesportsApi::Game do
     it { expect(game.blue_team.id).to eq 67 }
     it { expect(game.red_team.name).to eq 'Copenhagen Wolves' }
     it { expect(game.date_time).to eq DateTime.new(2014, 5, 21, 15) }
+    it 'has the proper youtube_url' do
+      expect(game.youtube_url).to eq 'http://www.youtube.com/watch?v=_bsRoa3u0t8'
+    end
   end
 end
