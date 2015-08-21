@@ -12,7 +12,7 @@ module LolesportsApi
     def initialize(attributes = {})
       @id = (attributes['id'] || attributes['matchId']).to_i
       @date_time = parse_datetime(attributes['dateTime'])
-      @is_finished = attributes['isFinished']
+      @is_finished = (attributes['isFinished'] == '1' ? true : false)
       @is_live = attributes['isLive']
       @live_streams = attributes['liveStreams']
       @max_games = attributes['maxGames']
@@ -20,7 +20,7 @@ module LolesportsApi
       @polldaddy_id = attributes['polldaddyId']
       @tournament = LolesportsApi::Tournament.new(attributes['tournament'])
       @url = attributes['url']
-      @winner_id = attributes['winnerId']
+      @winner_id = attributes['winnerId'].to_i
 
       if attributes['tournament']
         @round = attributes['tournament']['round'].to_i

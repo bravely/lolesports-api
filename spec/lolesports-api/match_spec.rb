@@ -10,5 +10,7 @@ describe LolesportsApi::Match do
     it { expect(match.games[0].id).to eq 2782 }
     it { expect(match.tournament.id).to eq 102 }
     it { expect(match.tournament.name).to eq 'EU LCS Summer Split' }
+    it { expect(match.winner_id).to eq 67 }
+    it { expect(match.is_finished).to eq true }
   end
 end
