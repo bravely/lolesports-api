@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/game/7071.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 22 Aug 2015 21:44:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '344'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8187450b9cf944571019106fa26119de1440279873; expires=Sun, 21-Aug-16
+        21:44:33 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1440279588-1"'
+      Expires:
+      - Sat, 22 Aug 2015 22:14:33 GMT
+      Last-Modified:
+      - Sat, 22 Aug 2015 21:39:48 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '526260569'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - HIT
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 21a1c276555f1eb9-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"dateTime":null,"winnerId":null,"maxGames":"5","gameNumber":"1","gameLength":null,"matchId":"5338","tournament":{"id":"241","name":"2015
+        NA LCS Summer Playoffs","round":"3"},"platformId":null,"platformGameId":null,"vods":null,"contestants":{"blue":{"id":"1","name":"Team
+        SoloMid","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/TSM%20logovector%20-white.png"},"red":{"id":"2","name":"Counter
+        Logic Gaming","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/600px-Clg_logo2.png"}},"players":[],"noVods":0,"legsUrl":false}'
+    http_version: 
+  recorded_at: Sat, 22 Aug 2015 21:44:36 GMT
+recorded_with: VCR 2.9.3

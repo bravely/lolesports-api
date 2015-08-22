@@ -19,5 +19,14 @@ describe LolesportsApi::Game do
       let(:game) { LolesportsApi::Game.find(5334) }
       it { expect(game.youtube_url).to eq nil }
     end
+    context 'when a game is in the future' do
+      let(:game) do
+        VCR.use_cassette('game/future') do
+          LolesportsApi::Game.find(7071)
+        end
+      end
+      it { expect(game.id).to eq 7071 }
+      it { expect(game.winner_id).to eq nil }
+    end
   end
 end

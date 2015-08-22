@@ -23,8 +23,8 @@ module LolesportsApi
       @players = []
       @tournament = attributes['tournament'] || {}
       @vods = attributes['vods'] || {}
-      @winner_id = attributes['winnerId'].to_i
       @has_vod = attributes['hasVod']
+      @winner_id = parse_winner_id(attributes['winnerId'])
       @date_time = parse_datetime(attributes['dateTime'])
       @youtube_url = parse_vods(attributes, 'youtube')
 
@@ -35,10 +35,12 @@ module LolesportsApi
 
     def self.find(game_id)
       super
-      @attributes['players'].each_value do |player|
-        @base_object.players << LolesportsApi::Play.new(player)
-      end
       @base_object.prepare_teams(@attributes)
+      if @attributes['players'] && @attributes['players'].any?
+        @attributes['players'].each_value do |player|
+          @base_object.players << LolesportsApi::Play.new(player)
+        end
+      end
       @base_object
     end
 
@@ -53,6 +55,10 @@ module LolesportsApi
     def parse_vods(attrs, type)
       return nil if attrs['hasVod'] == 0 || attrs['vods'].nil?
       return attrs['vods']['vod']['URL'] if attrs['vods']['vod']['type'] == type
+    end
+
+    def parse_winner_id(attr)
+      attr =~ /^\d+$/ ? attr : nil
     end
   end
 end
