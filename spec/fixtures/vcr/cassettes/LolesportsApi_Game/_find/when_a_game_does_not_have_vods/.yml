@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/game/5334.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 22 Aug 2015 16:35:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '628'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df180ed9b3746955f8db7b2976b7ba4451440261316; expires=Sun, 21-Aug-16
+        16:35:16 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1440260914-1"'
+      Expires:
+      - Sat, 22 Aug 2015 17:05:16 GMT
+      Last-Modified:
+      - Sat, 22 Aug 2015 16:28:34 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '526138886'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - HIT
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 219ffd69fc4d0296-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"dateTime":"2015-02-06T05:00Z","winnerId":"1847","maxGames":"2","gameNumber":"1","gameLength":0,"matchId":"4290","tournament":{"id":"204","name":"LPL
+        Spring","round":"4"},"platformId":null,"platformGameId":null,"vods":null,"contestants":{"blue":{"id":"1847","name":"Edward
+        Gaming","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/EDG-logo_0.png"},"red":{"id":"3752","name":"Master3","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/m3-logo.png"}},"players":{"player0":{"id":3769,"teamId":3752,"name":"Candy","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/templateSilhoutte_4.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player1":{"id":3185,"teamId":3752,"name":"Soist","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/templateSilhoutte_4.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player2":{"id":2078,"teamId":3752,"name":"lovecd","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/M3-LoveCD-2015lpl.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player3":{"id":3184,"teamId":3752,"name":"xr","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/templateSilhoutte_4.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player4":{"id":680,"teamId":3752,"name":"dade","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/M3-Dade-2015lpl.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player5":{"id":2088,"teamId":1847,"name":"Koro1","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/EDG-Koro-2015lpl.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player6":{"id":2089,"teamId":1847,"name":"Clearlove","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/EDG-Clearlove-2015lpl.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player7":{"id":983,"teamId":1847,"name":"Pawn","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/EDG-Pawn-2015lpl.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player8":{"id":2086,"teamId":1847,"name":"FZZF","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/FZZF.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0},"player9":{"id":2091,"teamId":1847,"name":"Blackloli","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/Fireloli.jpg","kda":null,"kills":null,"deaths":null,"assists":null,"endLevel":null,"minionsKilled":null,"totalGold":null,"spell0":"","spell1":"","items0":"","championId":0}},"noVods":1,"legsUrl":false}'
+    http_version: 
+  recorded_at: Sat, 22 Aug 2015 16:35:17 GMT
+recorded_with: VCR 2.9.3

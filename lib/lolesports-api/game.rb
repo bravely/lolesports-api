@@ -17,7 +17,7 @@ module LolesportsApi
       @legs_url = attributes['legsUrl']
       @match_id = attributes['matchId'].to_i
       @max_games = attributes['maxGames'].to_i
-      @no_vods = attributes['noVods']
+      @no_vods = (attributes['noVods'] == '1' ? true : false)
       @platform_game_id = attributes['platformGameId']
       @platform_id = attributes['platformId']
       @players = []
@@ -51,8 +51,8 @@ module LolesportsApi
     private
 
     def parse_vods(attrs, type)
-      return nil unless attrs['noVods'] == 0
-      attrs['vods']['vod']['URL'] if attrs['vods']['vod']['type'] == type
+      return nil if attrs['hasVod'] == 0 || attrs['vods'].nil?
+      return attrs['vods']['vod']['URL'] if attrs['vods']['vod']['type'] == type
     end
   end
 end

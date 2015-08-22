@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://na.lolesports.com/api/game/2782.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 22 Aug 2015 16:35:15 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1197'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df568cd5b0644da650e67cdfec4c726411440261314; expires=Sun, 21-Aug-16
+        16:35:14 GMT; path=/; domain=.lolesports.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1800
+      Etag:
+      - '"1440261322-1"'
+      Expires:
+      - Sat, 22 Aug 2015 17:05:15 GMT
+      Last-Modified:
+      - Sat, 22 Aug 2015 16:35:22 GMT
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Drupal-Cache:
+      - MISS
+      X-Varnish:
+      - '463133461'
+      X-Varnish-Cache:
+      - MISS
+      Cf-Cache-Status:
+      - EXPIRED
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 219ffd603d2b11f5-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"dateTime":"2014-05-21T15:00Z","winnerId":"67","maxGames":"1","gameNumber":"1","gameLength":1414,"matchId":"2299","tournament":{"id":"102","name":"EU
+        LCS Summer Split","round":"1"},"platformId":null,"platformGameId":null,"vods":{"vod":{"type":"youtube","URL":"http://www.youtube.com/watch?v=_bsRoa3u0t8","embedCode":null}},"contestants":{"blue":{"id":"67","name":"SK
+        Gaming","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/sk-white.png"},"red":{"id":"1100","name":"Copenhagen
+        Wolves","logoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/Wolveslogobund.png"}},"players":{"player0":{"id":1124,"teamId":67,"name":"fredy122","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/sk-fredy122-2015Summer.jpg","kda":10,"kills":8,"deaths":1,"assists":2,"endLevel":13,"minionsKilled":136,"totalGold":10240,"spell0":"4","spell1":"12","items0":"3153","items1":"3111","items2":"3044","items3":"1055","items4":"1055","items5":"3057","championId":24},"player1":{"id":1125,"teamId":67,"name":"Svenskeren","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/SK-svenskeren-2015Summer.jpg","kda":4.5,"kills":2,"deaths":2,"assists":7,"endLevel":13,"minionsKilled":92,"totalGold":8353,"spell0":"11","spell1":"4","items0":"3209","items1":"3143","items2":"2049","items3":"0","items4":"0","items5":"3047","championId":28},"player2":{"id":1126,"teamId":67,"name":"Jesse","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/cst-jesiz-2015.jpg","kda":14,"kills":10,"deaths":0,"assists":4,"endLevel":16,"minionsKilled":249,"totalGold":13140,"spell0":"4","spell1":"14","items0":"3115","items1":"3252","items2":"3085","items3":"1026","items4":"1056","items5":"3100","championId":10},"player3":{"id":118,"teamId":67,"name":"CandyPanda","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/sk-candypanda-2015summer.jpg","kda":7,"kills":1,"deaths":1,"assists":6,"endLevel":14,"minionsKilled":205,"totalGold":9863,"spell0":"4","spell1":"7","items0":"1055","items1":"3072","items2":"3006","items3":"3044","items4":"3035","items5":"1042","championId":236},"player4":{"id":79,"teamId":67,"name":"nRated","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/sk-nrated-2015Summer.jpg","kda":12,"kills":0,"deaths":0,"assists":12,"endLevel":12,"minionsKilled":20,"totalGold":7975,"spell0":"4","spell1":"3","items0":"3092","items1":"3222","items2":"2049","items3":"2043","items4":"3117","items5":"1057","championId":25},"player5":{"id":1101,"teamId":1100,"name":"YoungBuck","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/CW-youngbuck-2015.jpg","kda":0.4,"kills":0,"deaths":5,"assists":2,"endLevel":11,"minionsKilled":124,"totalGold":5788,"spell0":"4","spell1":"12","items0":"1056","items1":"3028","items2":"1056","items3":"3108","items4":"3020","items5":"1056","championId":117},"player6":{"id":1491,"teamId":1100,"name":"Airwaks","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/CW-airwalks-2015.jpg","kda":1,"kills":1,"deaths":4,"assists":3,"endLevel":11,"minionsKilled":61,"totalGold":5592,"spell0":"4","spell1":"11","items0":"3209","items1":"2049","items2":"1011","items3":"1001","items4":"0","items5":"0","championId":64},"player7":{"id":1103,"teamId":1100,"name":"cowTard","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/COW-TARD.CW_lolesports.PP__0.jpg","kda":0.5,"kills":2,"deaths":4,"assists":0,"endLevel":13,"minionsKilled":206,"totalGold":7574,"spell0":"4","spell1":"3","items0":"3144","items1":"1055","items2":"3250","items3":"3087","items4":"1042","items5":"1042","championId":157},"player8":{"id":1471,"teamId":1100,"name":"Woolite","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/roc-woolite-2015Summer.jpg","kda":0.33333333333333,"kills":1,"deaths":3,"assists":0,"endLevel":11,"minionsKilled":177,"totalGold":6957,"spell0":"4","spell1":"7","items0":"3006","items1":"1055","items2":"3072","items3":"3035","items4":"0","items5":"0","championId":104},"player9":{"id":1105,"teamId":1100,"name":"Unlimited","photoURL":"http://riot-web-cdn.s3-us-west-1.amazonaws.com/lolesports/s3fs-public/CW-unlimited-2015.jpg","kda":0.4,"kills":0,"deaths":5,"assists":2,"endLevel":10,"minionsKilled":12,"totalGold":4883,"spell0":"3","spell1":"4","items0":"1033","items1":"3098","items2":"2049","items3":"2043","items4":"1001","items5":"3108","championId":143}},"noVods":0,"legsUrl":null}'
+    http_version: 
+  recorded_at: Sat, 22 Aug 2015 16:35:16 GMT
+recorded_with: VCR 2.9.3
