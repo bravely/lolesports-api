@@ -38,7 +38,7 @@ module LolesportsApi
     end
 
     def prepare_games(attrs)
-      return unless attrs['games']
+      return unless attrs['games'] && attrs['games'].any?
       @games = []
       attrs['games'].each_value do |game|
         @games << LolesportsApi::Game.new(game)
