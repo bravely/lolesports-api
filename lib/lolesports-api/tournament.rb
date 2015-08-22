@@ -25,8 +25,10 @@ module LolesportsApi
 
     def self.find(tournament_id)
       super
-      @attributes['contestants'].each_value do |contestant|
-        @base_object.contestants << LolesportsApi::Team.new(contestant)
+      if @attributes['contestants'] && @attributes['contestants'].any?
+        @attributes['contestants'].each_value do |contestant|
+          @base_object.contestants << LolesportsApi::Team.new(contestant)
+        end
       end
       @base_object
     end
