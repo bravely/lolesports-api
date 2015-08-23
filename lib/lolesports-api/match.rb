@@ -25,7 +25,7 @@ module LolesportsApi
       if attributes['tournament']
         @round = attributes['tournament']['round'].to_i
       end
-      prepare_teams(attributes)
+      prepare_teams(attributes['contestants'])
       prepare_games(attributes)
 
       self
@@ -45,10 +45,11 @@ module LolesportsApi
       end
     end
 
-    def prepare_teams(attrs)
-      return unless attrs['contestants']
-      @blue_team = LolesportsApi::Team.new(attrs['contestants']['blue'])
-      @red_team = LolesportsApi::Team.new(attrs['contestants']['red'])
+    def prepare_teams(teams)
+      return unless teams
+
+      @blue_team = LolesportsApi::Team.new(teams['blue']) if teams['blue']
+      @red_team = LolesportsApi::Team.new(teams['red']) if teams['red']
     end
   end
 end
